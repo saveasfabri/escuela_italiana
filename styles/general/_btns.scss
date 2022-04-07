@@ -1,0 +1,117 @@
+@import "./variables";
+
+.btn-red {
+  position: relative;
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #ac242a;
+  border-radius: 25px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 6px #1f1f1fb0;
+  &:hover {
+    background-color: #9b0b12;
+    box-shadow: none;
+  }
+  &:active {
+    transform:scale(.9);
+    box-shadow: none;
+  }
+}
+
+.btn-red-soft {
+  position: relative;
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ac242abd;
+  border-radius: 25px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 6px #1f1f1f52;
+  &:hover {
+    background-color: #ac242a;
+    color: #ffffff;
+    box-shadow: none;
+  }
+  &:active {
+    transform:scale(.9);
+    box-shadow: none;
+  }
+}
+
+.btn-white {
+  position: relative;
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+  color: #16381c;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;  
+  padding: 10px 30px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 6px #00000081;
+  &:hover {
+    color: #33693e;
+    background-color: #c9c9c9;
+    box-shadow: none;
+  }
+  &:active {
+    transform:scale(.9);
+    box-shadow: none;
+  }
+}
+
+.btn-green {
+  position: relative;
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;  
+  padding: 10px 30px;
+  background-color: #16381c;
+  border-radius: 25px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 6px #1f1f1fb0;
+  &:hover {
+    background-color: #24522d;
+    color: #d0cece;
+    box-shadow: none;
+  }
+  &:active {
+    transform:scale(.9);
+    box-shadow: none;
+  }
+}
+
+.btn-transparent {
+  position: relative;
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;  
+  padding: 10px 30px;
+  border: #ffffff48 solid 2px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 6px #00000081;
+  &:hover {
+    color: #33693e;
+    background-color: #c9c9c9;
+    box-shadow: none;
+  }
+  &:active {
+    transform:scale(.9);
+    box-shadow: none;
+  }
+}

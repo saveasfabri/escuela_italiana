@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&diaplay=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700|Abril+Fatface:40');
+
+
+/************************ Font Family *************************/
+
+@mixin montserrat{font-family: Montserrat, sans-serif};
+@mixin courierNew{font-family: 'Courier New', Courier, monospace};
+@mixin arial{font-family: 'Arial', sans-serif};
+@mixin georgia{font-family: 'Georgia', serif};
+@mixin roboto{font-family: Roboto, sans-serif};
+@mixin robotoCondensed{font-family: 'Roboto Condensed', sans-serif};
+@mixin robotoSlab{font-family: 'Roboto Slab', serif};
+@mixin openSans{font-family: 'Open Sans', sans-serif};
+@mixin lato{font-family: Lato, sans-serif};
+@mixin oswald{font-family: Oswald, sans-serif};
+@mixin raleway{font-family: Raleway, sans-serif};
+@mixin ubuntu{font-family: Ubuntu, sans-serif};
+@mixin merriweather{font-family: Merriweather, serif};
+@mixin playfairDisplay{font-family: 'Playfair Display', serif};
+@mixin lobsterDisplay{font-family: Lobster, display};
+@mixin openSans{font-family: 'Open Sans',sans-serif};
+@mixin abrilFatface{font-family: 'Abril Fatface',cursive};
+
+/************************ Font Color *************************/
+
+/* MAIN COLORS */
+@mixin color-withe{color: #ffffff};
+@mixin color-black{color: #000000};
+@mixin color-red{color: #ac242a};
+@mixin color-green-hard{color: #16381c};
+@mixin color-green-soft{color: #0f5f1d};
+@mixin color-grey {color: #666666};
+
+@mixin color-grey_postre_comedor{color: #464646};
+@mixin color-red_bar-ficha_comedor{color: #ac242b91};
+
+/* HOVER */
+@mixin color-red_hover{color: #ad4147};
+
+
+
+/********************* Background Color **********************/
+
+@mixin background-white {background-color: #ffffff};
+
+@mixin background-green {background-color: #16381c};
+
+@mixin background-green-soft {background-color: #7f9883};
+
+@mixin background-grey_container{background-color:  #ffffff15};
+
+@mixin background-black_blur{background-color:  #00000075};
+
+@mixin background-black_svg{background-color: rgb(17, 17, 17)};
+
+
+/********************* Box-Shadow **********************/
+
+@mixin shadow {box-shadow: 8px 8px 6px #1f1f1fd8};
+
+/********************* Line-Heig **********************/
+
+@mixin line-heig {line-height: 1.6rem;}

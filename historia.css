@@ -1,0 +1,319 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&diaplay=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700|Abril+Fatface:40");
+/************************ Font Family *************************/
+/************************ Font Color *************************/
+/* MAIN COLORS */
+/* HOVER */
+/********************* Background Color **********************/
+/********************* Box-Shadow **********************/
+/********************* Line-Heig **********************/
+/************************************ SECCION HISTORIA ************************************/
+/********************* 125 AÑOS *********************/
+.u-section-1 {
+  min-height: 861px;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-layout-cell-1 {
+  min-height: 3781px;
+  background-image: none;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.u-section-1 .u-image-1 {
+  width: 329px;
+  height: 329px;
+  background-image: url("images/ScreenShot2020-11-25at2.50.23PM.png");
+  margin-top: 33px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  font-family: "Abril Fatface";
+  margin-top: 34px;
+}
+
+.u-section-1 .u-text-2 {
+  font-weight: 700;
+  margin-top: 51px;
+}
+
+.container-flag {
+  width: 100%;
+  height: 3150px;
+  position: relative;
+}
+
+.flag-greenStripe {
+  position: absolute;
+  display: block;
+  left: 35%;
+  width: 7%;
+  height: 100%;
+  margin-top: 50px;
+  background-color: #16381c;
+}
+
+.flag-whiteStripe {
+  position: absolute;
+  display: inline;
+  left: 45%;
+  width: 7%;
+  height: 100%;
+  margin-top: 50px;
+  background-color: #ffffff;
+}
+
+.flag-redStripe {
+  position: absolute;
+  display: inline;
+  left: 55%;
+  width: 7%;
+  height: 100%;
+  margin-top: 50px;
+  background-color: #ac242a;
+}
+
+.u-section-1 .u-layout-cell-2 {
+  min-height: 431px;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 30px;
+}
+
+/* MEDIA QUERY 1199 px */
+@media (max-width: 1199px) {
+  .u-section-1 {
+    min-height: 791px;
+  }
+  .u-section-1 .u-layout-wrap-1 {
+    position: relative;
+  }
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 3118px;
+  }
+  /* .u-section-1 .u-image-1 {
+    margin-right: 0;
+  } */
+  .u-section-1 .u-text-1 {
+    margin-top: 144px;
+    margin-right: 0;
+    margin-left: 13px;
+  }
+  .u-section-1 .u-text-2 {
+    margin-right: 0;
+  }
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 355px;
+  }
+}
+
+/* MEDIA QUERY 991 px */
+@media (max-width: 991px) {
+  .u-section-1 {
+    min-height: 714px;
+  }
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 966px;
+  }
+  /*.u-section-1 .u-image-1 {
+    width: 231px;
+    height: 231px;
+    margin-right: -4px; 
+    margin-left: auto;
+  }*/
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: 122px;
+    margin-left: -1px;
+  }
+  .u-section-1 .u-text-2 {
+    width: auto;
+    text-align: center;
+  }
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+}
+
+/* MEDIA QUERY 767 px */
+@media (max-width: 767px) {
+  .u-section-1 {
+    min-height: 1219px;
+  }
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /*.u-section-1 .u-image-1 {
+    width: 299px;
+    height: 299px;
+    margin-right: 0;
+  }*/
+  .u-section-1 .u-text-1 {
+    margin-top: 54px;
+    margin-left: 0;
+  }
+  .u-section-1 .u-text-2 {
+    margin-left: 0;
+  }
+  .u-section-1 .u-container-layout-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* MEDIA QUERY 575 px */
+@media (max-width: 575px) {
+  .u-section-1 {
+    min-height: 938px;
+  }
+  .u-section-1 .u-text-1 {
+    font-size: 3rem;
+  }
+  .u-section-1 .u-text-2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0;
+  }
+  .container-flag {
+    display: none;
+  }
+}
+
+/********************* NUESTRA HISTORIA *********************/
+.u-section-1 .u-text-3 {
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  color: #0f5f1d;
+  font-size: 1.75rem;
+  font-weight: normal;
+  margin: 0 427px 0 0;
+  line-height: 2.5rem;
+}
+
+.u-section-1 .u-text-4 {
+  position: relative;
+  font-family: 'Roboto';
+  color: #16381c;
+  font-size: 1.125rem;
+  line-height: 2;
+  margin: 20px 0 0;
+}
+
+.u-section-1 .u-layout-cell-3 {
+  min-height: 431px;
+  background-image: none;
+}
+
+.u-section-1 .u-container-layout-3 {
+  padding: 30px;
+}
+
+/* MEDIA QUERY 1199 px */
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-3 {
+    margin-right: 297px;
+  }
+  .u-section-1 .u-layout-cell-3 {
+    min-height: 355px;
+  }
+}
+
+/* MEDIA QUERY 991 px */
+@media (max-width: 991px) {
+  .u-section-1 .u-text-3 {
+    margin-right: 154px;
+  }
+  .u-section-1 .u-layout-cell-3 {
+    min-height: 100px;
+  }
+}
+
+/* MEDIA QUERY 767 px */
+@media (max-width: 767px) {
+  .u-section-1 .u-container-layout-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* MEDIA QUERY 575 px */
+@media (max-width: 575px) {
+  .u-section-1 .u-text-3 {
+    margin-right: 0;
+  }
+}
+
+/********************* HERMOSO RECORRIDO *********************/
+.u-section-1 .u-text-5 {
+  position: relative;
+  font-family: 'Montserrat';
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: normal;
+  line-height: 2.5rem;
+  margin: 20px 0 20px 0;
+}
+
+.u-section-1 .u-text-6 {
+  position: relative;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 2;
+  margin: 20px 0 0;
+}
+
+/* MEDIA QUERY 1199 px */
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-5 {
+    margin-right: 153px;
+  }
+}
+
+/* MEDIA QUERY 991 px */
+@media (max-width: 991px) {
+  .u-section-1 .u-text-5 {
+    margin-right: 10px;
+  }
+}
+
+/* MEDIA QUERY 575 px */
+@media (max-width: 575px) {
+  .u-section-1 .u-text-5 {
+    margin-right: 0;
+  }
+}
+
+/************************************ SECCION 125 AÑOS ************************************/
+.u-section-2 .u-sheet-1 {
+  min-height: 600px;
+}
+/*# sourceMappingURL=historia.css.map */

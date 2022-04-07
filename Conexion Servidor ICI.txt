@@ -1,0 +1,4 @@
+Servidor: sftp://escuelaitaliana.com
+Nombre: escuela
+Pass: ita2016
+Puerto: 21021

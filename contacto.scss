@@ -1,0 +1,372 @@
+@import './styles/general/_variables.scss';
+@import './styles/general/_btns.scss';
+
+
+/* ***************************** VIDEO - HOME ***************************** */
+.u-section-1 {
+  margin-top: 50px;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 331px;
+}
+
+.u-section-1 .u-text-1 {
+  font-family: "Abril Fatface";
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  line-height: 0.8;
+  margin: 60px 637px 0 90px;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+.u-section-1 .u-text-2 {
+  font-weight: 700;
+  margin: 7px 450px 60px 90px;
+  text-shadow: 1px 1px 4px #000000;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-1 {
+    margin-left: 0;
+    margin-right: 528px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 340px;
+    margin-left: 0;
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-text-1 {
+    margin-right: 308px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-1 {
+    margin-right: 128px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 {
+    margin-top: 20px;
+  }
+  .u-section-1 .u-sheet-1 {
+    min-height: 134px;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 1.25rem;
+    margin-top: 8px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+}
+
+/* ***************************** SECCION NIVELES ***************************** */
+
+.seccion_niveles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  .container-titleText_niveles {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    .title_niveles {
+      @include abrilFatface;
+      @include color-red;
+      font-size: 2.5rem;
+      letter-spacing: .15rem;
+      margin: 20px 0 0 0;
+    }
+    .text_niveles {
+      @include montserrat;
+      @include color-grey;
+      font-size: 1.2rem;
+      letter-spacing: .1rem;
+      margin: 20px 0 0 0;
+    }
+  }
+  .containerMain-addressMaps_niveles {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .container-addressMaps_niveles {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;      
+
+      .svg_niveles {
+        width: 47px;
+        height: 47px;
+        @include color-red;
+      }
+      .nivelAddress_niveles {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .titleNivel_niveles {
+          @include montserrat;
+          @include color-green-soft;
+          font-size: 1.3rem;
+          font-weight: 700;
+          margin: 20px 0;
+        }
+        .title_niveles {
+          @include montserrat;
+          font-size: 1rem;
+          font-weight: 500;
+          margin: 5px 0 0 0;
+        }        
+      }
+      .containerImgMaps_niveles {
+        width: 90%;
+        margin-top: 40px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .imgMaps_niveles {
+          width: 100%;
+          max-width: 350px;
+          border: #ad4147 solid 5px;
+          border-radius: 25px;
+          box-shadow: 5px 5px 5px  #00000038;
+          &:hover {
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+          }
+        }
+      }
+    }
+  }
+}
+.backgroundMaps-grey {
+  background-color: #ffffff;
+}
+@media (max-width: 1199px) {
+  
+}
+
+@media (max-width: 991px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 576px) {
+  .seccion_niveles {
+    .container-titleText_niveles {
+      padding: 0 20px;
+
+      .title_niveles {
+        font-size: 1.75rem;
+        text-align: center;
+      }
+
+      .text_niveles {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+
+    .containerMain-addressMaps_niveles {
+      flex-direction: column;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      .container-addressMaps_niveles {
+        width: 100%;
+        margin-top: 0;
+
+        .svg_niveles {
+          margin-top: 30px;
+        }
+        .containerImgMaps_niveles {
+          
+          .imgMaps_niveles {
+            margin-bottom: 50px;
+            &:hover {
+              transform: none; 
+            }
+          }
+        }
+      }
+    }  
+  }
+  .backgroundMaps-grey {
+    background-color: #dbdbdb70;
+  }
+}
+
+
+/* ***************************** SECCION MAIL-CONSULADO ***************************** */
+
+.seccion_mailConsulado {
+  width: 100%;
+  @include background-green-soft;
+  display: flex;
+
+  .container_mailConsulado {
+    width: 50%;
+    margin: 70px 0;
+    display: flex;
+    flex-direction: column;
+
+    .group-svglink_mailConsulado {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .svg-div_mailConsulado {
+        width: 64px;
+        height: 64px;
+        
+        .svg_mailConsulado {
+        @include color-withe;
+        }
+      }
+      .link-div_mailConsulado {
+        width: 50%;
+        height: 250px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .btn-transparent_mail {
+          width: 50%;
+        }
+      }
+      .link-div2_mailConsulado {
+        width: 50%;
+        height: 250px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .titleConsulado_mailConsulado {
+          font-size: 1.3rem;
+          font-weight: 700;
+          @include color-red;
+          margin: 40px 0 10px 0;
+        }
+
+        .textConsulado_mailConsulado {
+          font-size: 1.2rem;
+          letter-spacing: .1rem;
+          @include color-withe;
+          margin: 10px 0 40px 0;
+        }
+
+        .btn-red-web {
+          width: 50%;
+          height: 100px;
+        }
+      }
+    }
+  }
+
+  .lineSeparator {
+    display: none;
+  }
+
+  .container-consulado_mailConsulado {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    .group-svgconsulado_mailConsulado {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+
+@media (max-width: 1199px) {
+  
+}
+
+@media (max-width: 991px) {
+  
+}
+
+@media (max-width: 767px) {
+  
+}
+
+@media (max-width: 575px) {
+  .seccion_mailConsulado {
+    flex-direction: column; 
+
+    .container_mailConsulado {
+      width: 100%;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-top: 50px;
+        margin-bottom: 70px;
+
+        .group-svglink_mailConsulado {
+
+          .link-div2_mailConsulado {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    .lineSeparator {
+      display: block;
+      width: 50%;
+      height: 2px;
+      background-color: #797979;
+      align-self: center;
+    }
+  }
+}
