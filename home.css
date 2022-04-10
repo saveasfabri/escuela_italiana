@@ -1,19 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&diaplay=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700|Abril+Fatface:40");
+/************************ Font Family *************************/
+/************************ Font Color *************************/
+/* MAIN COLORS */
+/* HOVER */
+/********************* Background Color **********************/
+/********************* Box-Shadow **********************/
+/********************* Line-Heig **********************/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body_index {
+  position: relative;
+  height: auto;
+  min-height: 100%;
+  color: #111111;
+  font-size: 1rem;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+}
+
+/***************************** VIDEO - HOME_index *****************************/
 .u-section-1 .u-sheet-1 {
   min-height: 600px;
 }
 
 .u-section-1 .u-text-1 {
-  font-family: "Abril Fatface";
+  font-family: 'Georgia', serif;
   font-size: 4.5rem;
   letter-spacing: -1px;
-  line-height: 0.8;
-  text-shadow: -2px -2px 8px rgba(128,128,128,1);
+  line-height: 5rem;
+  text-shadow: -2px -2px 8px black;
   margin: 151px 637px 0 90px;
 }
 
 .u-section-1 .u-text-2 {
   font-weight: 700;
-  text-shadow: -2px -2px 8px rgba(128,128,128,1);
+  text-shadow: -2px -2px 8px black;
   margin: 7px 450px 60px 90px;
 }
 
@@ -29,7 +54,6 @@
     margin-left: 0;
     margin-right: 528px;
   }
-
   .u-section-1 .u-text-2 {
     margin-right: 340px;
     margin-left: 0;
@@ -40,7 +64,6 @@
   .u-section-1 .u-text-1 {
     margin-right: 308px;
   }
-
   .u-section-1 .u-text-2 {
     margin-right: 120px;
   }
@@ -50,11 +73,9 @@
   .u-section-1 .u-text-1 {
     margin-right: 128px;
   }
-
   .u-section-1 .u-text-2 {
     margin-right: 0;
   }
-
   .u-section-1 .embed-responsive-1 {
     height: 100%;
     width: 198%;
@@ -65,15 +86,23 @@
 
 @media (max-width: 575px) {
   .u-section-1 .u-text-1 {
-    margin-right: 0;
+    margin: 130px 6px 0 15px;
     font-size: 2.25rem;
+    line-height: 3rem;
   }
-
+  .u-section-1 .u-text-2 {
+    margin: 50px 30px 0px 15px;
+    letter-spacing: .2rem;
+    line-height: 3rem;
+  }
   .u-section-1 .embed-responsive-1 {
     width: 314%;
     left: -107%;
   }
-}.u-section-2 {
+}
+
+/************************** SECCION NUESTRA HISTORIA *****************************/
+.u-section-2 {
   background-image: none;
 }
 
@@ -83,12 +112,18 @@
 
 .u-section-2 .u-layout-wrap-1 {
   margin: -142px auto 50px 0;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-box-shadow: 8px 8px 6px #1f1f1fd8;
+          box-shadow: 8px 8px 6px #1f1f1fd8;
 }
 
 .u-section-2 .u-image-1 {
   min-height: 504px;
   background-image: url("images/IMG_9530.JPG");
   background-position: 50% 50%;
+  border-radius: 22px 0 0 22px;
 }
 
 .u-section-2 .u-layout-cell-2 {
@@ -103,19 +138,26 @@
 .u-section-2 .u-line-1 {
   width: 691px;
   height: 3px;
-  transform-origin: left center 0;
+  -webkit-transform-origin: left center 0;
+          transform-origin: left center 0;
   margin: 72px 20px 0 auto;
 }
 
 .u-section-2 .u-text-1 {
   font-size: 3rem;
-  font-family: "Abril Fatface";
+  font-family: 'Georgia', serif;
+  font-weight: bold;
   margin: 20px 20px 0 0;
 }
 
 .u-section-2 .u-text-2 {
   font-weight: 600;
+  text-align: justify;
   margin: 20px 80px 0 0;
+}
+
+.btn-red_seccNuestHist-1 {
+  margin-top: 20px;
 }
 
 .u-section-2 .u-btn-1 {
@@ -126,6 +168,9 @@
   text-transform: uppercase;
   font-weight: 800;
   margin: 20px auto 50px 0;
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 6px #1f1f1f52;
+          box-shadow: 5px 5px 6px #1f1f1f52;
 }
 
 @media (max-width: 1199px) {
@@ -133,30 +178,24 @@
     margin-right: initial;
     margin-left: initial;
   }
-
   .u-section-2 .u-image-1 {
     background-position: 25.93% 50%;
   }
-
   .u-section-2 .u-container-layout-2 {
     padding-left: 40px;
   }
-
   .u-section-2 .u-line-1 {
     width: 594px;
     margin-right: 16px;
   }
-
   .u-section-2 .u-text-1 {
     position: relative;
     margin-right: 16px;
   }
-
   .u-section-2 .u-text-2 {
     position: relative;
     margin-right: 16px;
   }
-
   .u-section-2 .u-btn-1 {
     position: relative;
     height: 42px;
@@ -168,33 +207,26 @@
   .u-section-2 .u-sheet-1 {
     min-height: 412px;
   }
-
   .u-section-2 .u-image-1 {
     min-height: 319px;
   }
-
   .u-section-2 .u-layout-cell-2 {
     min-height: 319px;
   }
-
   .u-section-2 .u-container-layout-2 {
     padding-left: 31px;
   }
-
   .u-section-2 .u-line-1 {
     width: 455px;
     margin-top: 36px;
     margin-right: 13px;
   }
-
   .u-section-2 .u-text-1 {
     margin-right: 13px;
   }
-
   .u-section-2 .u-text-2 {
     margin-right: 20px;
   }
-
   .u-section-2 .u-btn-1 {
     margin-right: 13px;
     margin-bottom: 36px;
@@ -205,72 +237,74 @@
   .u-section-2 .u-image-1 {
     min-height: 718px;
   }
-
   .u-section-2 .u-layout-cell-2 {
     min-height: 359px;
   }
-
   .u-section-2 .u-container-layout-2 {
     padding-left: 23px;
   }
-
   .u-section-2 .u-line-1 {
     width: 426px;
     margin-right: 9px;
   }
-
   .u-section-2 .u-text-1 {
     margin-right: 9px;
   }
-
   .u-section-2 .u-text-2 {
     margin-right: 9px;
   }
-
   .u-section-2 .u-btn-1 {
     margin-right: 9px;
   }
 }
 
 @media (max-width: 575px) {
+  .u-section-2 .u-layout-wrap-1 {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .u-section-2 .u-image-1 {
+    min-height: 504px;
+    border-radius: 22px 22px 0 0;
+  }
   .u-section-2 .u-image-1 {
     min-height: 452px;
   }
-
   .u-section-2 .u-layout-cell-2 {
     min-height: 226px;
+    border-radius: 25px 25px 0 0;
   }
-
   .u-section-2 .u-container-layout-2 {
     padding-left: 15px;
   }
-
   .u-section-2 .u-line-1 {
     margin-right: initial;
     margin-left: initial;
     width: auto;
   }
-
   .u-section-2 .u-text-1 {
     margin-left: 6px;
-    margin-right: 6px;
+    margin-right: 13px;
   }
-
   .u-section-2 .u-text-2 {
     margin-right: 6px;
     margin-left: 6px;
+    text-align: left;
   }
-
   .u-section-2 .u-btn-1 {
     margin-right: 6px;
     margin-left: 6px;
   }
-}.u-section-3 {
+}
+
+/***************************** SECCION OFERTA PEDAGOGICA *****************************/
+.u-section-3 {
   background-image: none;
 }
 
 .u-section-3 .u-sheet-1 {
   min-height: 500px;
+  margin-bottom: 50px;
 }
 
 .u-section-3 .u-layout-wrap-1 {
@@ -287,18 +321,20 @@
 }
 
 .u-section-3 .u-text-1 {
+  font-family: 'Georgia', serif;
+  font-size: 3rem;
+  font-weight: 800;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
-  font-size: 3rem;
   background-image: none;
-  font-family: "Abril Fatface";
 }
 
 .u-section-3 .u-line-1 {
   width: 1100px;
   height: 3px;
-  transform-origin: left center 0;
+  -webkit-transform-origin: left center 0;
+          transform-origin: left center 0;
   margin: 30px auto 15px;
 }
 
@@ -307,9 +343,17 @@
 }
 
 .u-section-3 .u-text-2 {
+  font-size: 1.05rem;
   margin-left: 20px;
   margin-right: 20px;
-  font-weight: 800;
+  margin-top: 30px;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.btn-white_seccOfertaPed-2 {
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .u-section-3 .u-btn-1 {
@@ -321,68 +365,72 @@
   border-style: none;
   text-transform: uppercase;
   font-weight: 900;
+  border-radius: 25px;
+  -webkit-box-shadow: 6px 6px 4px #1f1f1f;
+          box-shadow: 6px 6px 4px #1f1f1f;
 }
 
 .u-section-3 .u-layout-cell-3 {
   min-height: 245px;
 }
 
+.u-background-white {
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  background-color: #ffffff15;
+  border-radius: 25px;
+  -webkit-box-shadow: 8px 8px 6px #1f1f1f65;
+          box-shadow: 8px 8px 6px #1f1f1f65;
+}
+
 .u-section-3 .u-text-3 {
   font-size: 1.25rem;
-  font-style: italic;
-  font-weight: 800;
-  margin: 20px 20px 0;
+  font-weight: 700;
+  margin: 20px 30px 0;
 }
 
 .u-section-3 .u-text-4 {
-  font-size: 0.875rem;
-  font-weight: 700;
-  margin: 20px 20px 0;
+  font-size: 0.90rem;
+  font-weight: 600;
+  margin: 20px 30px 0;
 }
 
 @media (max-width: 1199px) {
   .u-section-3 .u-sheet-1 {
     min-height: 431px;
   }
-
   .u-section-3 .u-layout-wrap-1 {
     margin-right: initial;
     margin-left: initial;
   }
-
   .u-section-3 .u-container-layout-1 {
     padding-left: 16px;
     padding-right: 16px;
   }
-
   .u-section-3 .u-text-1 {
     margin-left: 16px;
     margin-right: 16px;
     position: relative;
   }
-
   .u-section-3 .u-line-1 {
     width: 907px;
   }
-
   .u-section-3 .u-text-2 {
     margin-left: 16px;
     margin-right: 16px;
     position: relative;
   }
-
   .u-section-3 .u-btn-1 {
     margin-left: 16px;
     margin-right: 16px;
     position: relative;
   }
-
   .u-section-3 .u-text-3 {
     margin-left: 16px;
     margin-right: 16px;
     position: relative;
   }
-
   .u-section-3 .u-text-4 {
     margin-left: 16px;
     margin-right: 16px;
@@ -394,48 +442,38 @@
   .u-section-3 .u-sheet-1 {
     min-height: 306px;
   }
-
   .u-section-3 .u-layout-cell-1 {
     min-height: 94px;
   }
-
   .u-section-3 .u-container-layout-1 {
     padding-left: 13px;
     padding-right: 13px;
   }
-
   .u-section-3 .u-text-1 {
     margin-left: 13px;
     margin-right: 13px;
   }
-
   .u-section-3 .u-line-1 {
     width: 695px;
   }
-
   .u-section-3 .u-layout-cell-2 {
     min-height: 155px;
   }
-
   .u-section-3 .u-text-2 {
     margin-left: 13px;
     margin-right: 13px;
   }
-
   .u-section-3 .u-btn-1 {
     margin-left: 13px;
     margin-right: 13px;
   }
-
   .u-section-3 .u-layout-cell-3 {
     min-height: 306px;
   }
-
   .u-section-3 .u-text-3 {
     margin-left: 13px;
     margin-right: 13px;
   }
-
   .u-section-3 .u-text-4 {
     margin-left: 13px;
     margin-right: 13px;
@@ -446,48 +484,38 @@
   .u-section-3 .u-sheet-1 {
     min-height: 406px;
   }
-
   .u-section-3 .u-layout-cell-1 {
     min-height: 71px;
   }
-
   .u-section-3 .u-container-layout-1 {
     padding-left: 9px;
     padding-right: 9px;
   }
-
   .u-section-3 .u-text-1 {
     margin-left: 9px;
     margin-right: 9px;
   }
-
   .u-section-3 .u-line-1 {
     width: 540px;
   }
-
   .u-section-3 .u-layout-cell-2 {
     min-height: 233px;
   }
-
   .u-section-3 .u-text-2 {
     margin-left: 9px;
     margin-right: 9px;
   }
-
   .u-section-3 .u-btn-1 {
     margin-left: 9px;
     margin-right: 9px;
   }
-
   .u-section-3 .u-layout-cell-3 {
     min-height: 240px;
   }
-
   .u-section-3 .u-text-3 {
     margin-left: 9px;
     margin-right: 9px;
   }
-
   .u-section-3 .u-text-4 {
     margin-left: 9px;
     margin-right: 9px;
@@ -498,51 +526,52 @@
   .u-section-3 .u-layout-cell-1 {
     min-height: 45px;
   }
-
   .u-section-3 .u-container-layout-1 {
     padding-left: 6px;
     padding-right: 6px;
   }
-
   .u-section-3 .u-text-1 {
     margin-left: 6px;
     margin-right: 6px;
-    font-size: 1.5rem;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
   }
-
   .u-section-3 .u-line-1 {
-    width: 340px;
+    width: 180px;
+    margin: 40px auto 0 20px;
   }
-
   .u-section-3 .u-layout-cell-2 {
+    margin-bottom: 30px;
     min-height: 147px;
   }
-
   .u-section-3 .u-text-2 {
+    font-weight: 500;
     margin-left: 6px;
     margin-right: 6px;
   }
-
   .u-section-3 .u-btn-1 {
-    margin-left: 6px;
+    margin: 10px 6px;
+    margin-left: 15px;
     margin-right: 6px;
   }
-
   .u-section-3 .u-layout-cell-3 {
     min-height: 147px;
   }
-
   .u-section-3 .u-text-3 {
-    margin-left: 6px;
+    margin-left: 25px;
     margin-right: 6px;
   }
-
   .u-section-3 .u-text-4 {
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-}.u-section-4 {
+}
+
+/***************************** SECCION ULTIMAS NOTICIAS *****************************/
+.u-section-4 {
   background-image: none;
+  margin-top: 40px;
 }
 
 .u-section-4 .u-sheet-1 {
@@ -563,29 +592,33 @@
 
 .u-section-4 .u-shape-1 {
   margin-right: 0;
+  border-radius: 25px;
 }
 
 .u-section-4 .u-text-1 {
-  font-size: 13.75rem;
-  font-family: "Abril Fatface";
+  font-family: 'Abril Fatface',cursive;
+  font-size: 12rem;
   margin: -99px 256px 0 -7px;
 }
 
 .u-section-4 .u-line-1 {
   width: 221px;
   height: 3px;
-  transform-origin: left center 0px;
+  -webkit-transform-origin: left center 0px;
+          transform-origin: left center 0px;
   margin: -20px auto 0 0;
 }
 
 .u-section-4 .u-text-2 {
+  font-family: Oswald, sans-serif;
   font-size: 3rem;
+  font-weight: 400;
   margin: 30px 9px 0 0;
 }
 
 .u-section-4 .u-text-3 {
-  font-weight: 800;
-  margin: 20px 74px 0 0;
+  font-weight: 600;
+  margin: 20px 74px 35px 0;
 }
 
 .u-section-4 .u-btn-1 {
@@ -595,7 +628,9 @@
   border-style: none;
   text-transform: uppercase;
   font-weight: 800;
-  margin: 20px auto 0 0;
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 6px #1f1f1fb0;
+          box-shadow: 5px 5px 6px #1f1f1fb0;
 }
 
 .u-section-4 .u-layout-cell-2 {
@@ -606,6 +641,8 @@
   width: 635px;
   height: 410px;
   margin: 35px auto 0 -65px;
+  -webkit-box-shadow: 8px 8px 6px #1f1f1f65;
+          box-shadow: 8px 8px 6px #1f1f1f65;
 }
 
 .u-section-4 .u-layout-cell-3 {
@@ -615,6 +652,8 @@
 .u-section-4 .u-container-layout-3 {
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .u-section-4 .u-icon-1 {
@@ -624,7 +663,7 @@
 }
 
 .u-section-4 .u-text-4 {
-  font-family: "Abril Fatface";
+  font-family: "Montserrat";
   font-style: italic;
   width: 845px;
   margin: 27px auto 0;
@@ -635,35 +674,28 @@
     margin-right: initial;
     margin-left: initial;
   }
-
   .u-section-4 .u-container-layout-1 {
     padding-left: 16px;
   }
-
   .u-section-4 .u-shape-1 {
     margin-right: initial;
   }
-
   .u-section-4 .u-text-1 {
     margin-top: -461px;
     margin-right: 606px;
     margin-left: 50px;
   }
-
   .u-section-4 .u-line-1 {
     width: 182px;
     margin-top: 100px;
   }
-
   .u-section-4 .u-text-2 {
     position: relative;
     margin-right: 8px;
   }
-
   .u-section-4 .u-text-3 {
     margin-right: 61px;
   }
-
   .u-section-4 .u-image-1 {
     width: 546px;
     height: 333px;
@@ -671,16 +703,13 @@
     margin-bottom: 50px;
     margin-left: -76px;
   }
-
   .u-section-4 .u-layout-cell-3 {
     min-height: 181px;
   }
-
   .u-section-4 .u-container-layout-3 {
     padding-left: 8px;
     padding-right: 8px;
   }
-
   .u-section-4 .u-text-4 {
     width: 515px;
   }
@@ -690,55 +719,44 @@
   .u-section-4 .u-sheet-1 {
     min-height: 1122px;
   }
-
   .u-section-4 .u-layout-cell-1 {
     min-height: 303px;
   }
-
   .u-section-4 .u-container-layout-1 {
     padding-left: 13px;
   }
-
   .u-section-4 .u-text-1 {
     margin-top: -669px;
     margin-right: 426px;
     margin-left: 49px;
   }
-
   .u-section-4 .u-line-1 {
     width: 140px;
     margin-top: 308px;
   }
-
   .u-section-4 .u-text-2 {
     margin-right: 6px;
   }
-
   .u-section-4 .u-text-3 {
     position: relative;
     margin-right: 47px;
   }
-
   .u-section-4 .u-layout-cell-2 {
     min-height: 303px;
   }
-
   .u-section-4 .u-image-1 {
     width: 439px;
     margin-top: 167px;
     margin-bottom: 65px;
     margin-left: -79px;
   }
-
   .u-section-4 .u-layout-cell-3 {
     min-height: 139px;
   }
-
   .u-section-4 .u-container-layout-3 {
     padding-left: 6px;
     padding-right: 6px;
   }
-
   .u-section-4 .u-text-4 {
     width: 395px;
     position: relative;
@@ -749,127 +767,116 @@
   .u-section-4 .u-sheet-1 {
     min-height: 1339px;
   }
-
   .u-section-4 .u-layout-cell-1 {
     min-height: 455px;
   }
-
   .u-section-4 .u-container-layout-1 {
     padding-left: 9px;
   }
-
   .u-section-4 .u-text-1 {
     margin-top: -1065px;
     margin-right: 169px;
     margin-left: 38px;
   }
-
   .u-section-4 .u-line-1 {
     width: 221px;
     margin-top: 1249px;
   }
-
   .u-section-4 .u-text-2 {
     margin-right: 9px;
   }
-
   .u-section-4 .u-text-3 {
     margin-right: 74px;
   }
-
   .u-section-4 .u-layout-cell-2 {
     min-height: 455px;
   }
-
   .u-section-4 .u-image-1 {
     width: 476px;
     margin-top: -76px;
     margin-left: auto;
     margin-bottom: 46px;
   }
-
   .u-section-4 .u-layout-cell-3 {
     min-height: 104px;
   }
-
   .u-section-4 .u-container-layout-3 {
     padding-left: 5px;
     padding-right: 5px;
   }
-
   .u-section-4 .u-text-4 {
     width: 370px;
   }
 }
 
 @media (max-width: 575px) {
+  .u-background-white {
+    margin-bottom: 30px;
+  }
+  .u-section-4 .u-shape-1 {
+    margin-top: 60px;
+  }
   .u-section-4 .u-sheet-1 {
     min-height: 1249px;
   }
-
   .u-section-4 .u-layout-cell-1 {
     min-height: 286px;
   }
-
   .u-section-4 .u-container-layout-1 {
     padding-left: 6px;
   }
-
   .u-section-4 .u-text-1 {
     width: auto;
-    margin-top: -81px;
+    margin-top: -31px;
     margin-right: 31px;
-    margin-left: -6px;
+    margin-left: 6px;
   }
-
   .u-section-4 .u-line-1 {
-    width: 110px;
+    width: 250px;
+    margin-left: 10px;
     margin-top: 14px;
   }
-
   .u-section-4 .u-text-2 {
     width: auto;
-    margin-top: 42px;
+    margin-top: 20px;
     margin-right: 24px;
     margin-left: 18px;
   }
-
   .u-section-4 .u-text-3 {
     width: auto;
-    margin-top: 48px;
-    margin-right: 54px;
-    margin-left: 48px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
-
-  .u-section-4 .u-btn-1 {
-    margin-top: 80px;
-    margin-left: 63px;
+  .btn-white_seccOfertaPed-3 {
+    margin: 40px 0 20px 10px;
   }
-
   .u-section-4 .u-layout-cell-2 {
     min-height: 198px;
   }
-
   .u-section-4 .u-image-1 {
     height: 243px;
     width: 294px;
-    margin-top: -72px;
+    margin-top: 20px;
     margin-bottom: 0;
   }
-
   .u-section-4 .u-layout-cell-3 {
     min-height: 65px;
   }
-
   .u-section-4 .u-container-layout-3 {
     padding-left: 3px;
     padding-right: 3px;
   }
-
+  .u-section-4 .u-text-3 {
+    font-weight: 600;
+  }
   .u-section-4 .u-text-4 {
     width: 311px;
   }
-}.u-section-5 {
+}
+
+/********************* SECCION NIVELES/ESCUELA PARITARIA **********************/
+.u-section-5 {
   min-height: 664px;
 }
 
@@ -890,14 +897,15 @@
 .u-section-5 .u-line-1 {
   width: 272px;
   height: 3px;
-  transform-origin: right center 0px;
+  -webkit-transform-origin: right center 0px;
+          transform-origin: right center 0px;
   margin: 144px auto 0 0;
 }
 
 .u-section-5 .u-text-1 {
+  font-family: 'Georgia', serif;
   font-size: 3rem;
-  font-weight: 300;
-  font-family: "Abril Fatface";
+  font-weight: 600;
   margin: 23px 20px 0 0;
 }
 
@@ -933,14 +941,14 @@
 }
 
 .u-section-5 .u-text-3 {
-  font-style: italic;
-  font-family: "Abril Fatface";
-  font-size: 1.5rem;
-  margin: 78px 114px 0 0;
+  font-family: "Montserrat";
+  font-size: 1.35rem;
+  letter-spacing: 1px;
+  margin: 55px 48px 0px 20px;
 }
 
 .u-section-5 .u-text-4 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin: 20px 107px 0 0;
 }
 
@@ -948,29 +956,23 @@
   .u-section-5 .u-container-layout-1 {
     padding-left: 91px;
   }
-
   .u-section-5 .u-line-1 {
     width: 224px;
   }
-
   .u-section-5 .u-text-1 {
     margin-right: 16px;
   }
-
   .u-section-5 .u-text-2 {
     position: relative;
     margin-right: 16px;
   }
-
   .u-section-5 .u-container-layout-5 {
     padding-left: 16px;
   }
-
   .u-section-5 .u-text-3 {
     margin-top: 28px;
     margin-right: 94px;
   }
-
   .u-section-5 .u-text-4 {
     margin-right: 88px;
   }
@@ -980,39 +982,30 @@
   .u-section-5 .u-layout-cell-1 {
     min-height: 1259px;
   }
-
   .u-section-5 .u-container-layout-1 {
     padding-left: 70px;
   }
-
   .u-section-5 .u-line-1 {
     width: 172px;
   }
-
   .u-section-5 .u-text-1 {
     margin-right: 13px;
   }
-
   .u-section-5 .u-text-2 {
     margin-right: 13px;
   }
-
   .u-section-5 .u-image-2 {
     min-height: 576px;
   }
-
   .u-section-5 .u-layout-cell-5 {
     min-height: 315px;
   }
-
   .u-section-5 .u-container-layout-5 {
     padding-left: 13px;
   }
-
   .u-section-5 .u-text-3 {
     margin-right: 72px;
   }
-
   .u-section-5 .u-text-4 {
     margin-right: 68px;
   }
@@ -1022,35 +1015,27 @@
   .u-section-5 .u-layout-cell-1 {
     min-height: 944px;
   }
-
   .u-section-5 .u-container-layout-1 {
     padding-left: 52px;
   }
-
   .u-section-5 .u-line-1 {
     width: 161px;
   }
-
   .u-section-5 .u-text-1 {
     margin-right: 9px;
   }
-
   .u-section-5 .u-text-2 {
     margin-right: 9px;
   }
-
   .u-section-5 .u-layout-cell-5 {
     min-height: 354px;
   }
-
   .u-section-5 .u-container-layout-5 {
     padding-left: 9px;
   }
-
   .u-section-5 .u-text-3 {
     margin-right: 54px;
   }
-
   .u-section-5 .u-text-4 {
     margin-right: 51px;
   }
@@ -1060,456 +1045,191 @@
   .u-section-5 {
     min-height: 1959px;
   }
-
   .u-section-5 .u-layout-cell-1 {
     min-height: 459px;
   }
-
   .u-section-5 .u-container-layout-1 {
-    padding-left: 33px;
+    padding-left: 20px;
   }
-
   .u-section-5 .u-line-1 {
     width: 135px;
-    margin-top: 84px;
+    margin-top: 50px;
   }
-
   .u-section-5 .u-text-1 {
-    width: auto;
-    margin-top: 44px;
-    margin-right: 6px;
+    width: 100%;
+    margin: 25px 0 0 0;
+    text-align: left;
   }
-
   .u-section-5 .u-text-2 {
     width: auto;
     margin-top: 20px;
-    margin-right: 6px;
+    margin-right: 20px;
   }
-
   .u-section-5 .u-layout-cell-5 {
     min-height: 260px;
   }
-
   .u-section-5 .u-container-layout-5 {
-    padding-left: 6px;
+    padding-left: 0;
+    margin-bottom: 50px;
   }
-
   .u-section-5 .u-text-3 {
     width: auto;
     margin-top: 44px;
-    margin-right: 7px;
-    margin-left: 27px;
+    margin-right: 25px;
+    margin-left: 35px;
+    letter-spacing: 2px;
   }
-
   .u-section-5 .u-text-4 {
     width: auto;
     margin-top: 28px;
-    margin-right: 19px;
-    margin-left: 13px;
+    margin-right: 25px;
+    margin-left: 10px;
   }
-}.u-section-6 {
-  background-image: none;
 }
 
-.u-section-6 .u-sheet-1 {
-  min-height: 687px;
+/************************** SECCION NUESTROS EX ALUMNOS **************************/
+.seccion_exAlumnos {
+  width: 100%;
+  background-color: #7f9883;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.u-section-6 .u-layout-wrap-1 {
-  margin: 48px auto 48px 0;
-}
-
-.u-section-6 .u-layout-cell-1 {
-  min-height: 214px;
-}
-
-.u-section-6 .u-container-layout-1 {
-  padding-left: 20px;
-}
-
-.u-section-6 .u-line-1 {
-  width: 828px;
+.seccion_exAlumnos .lineWhite_exAlumnos {
+  width: 70%;
   height: 3px;
-  transform-origin: left center 0px;
-  margin: 70px auto 0 0;
+  margin-top: 100px;
+  background-color: #ffffff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.u-section-6 .u-text-1 {
+.seccion_exAlumnos .container-Main_exAlumos {
+  width: 85%;
+  margin-bottom: 90px;
+}
+
+.seccion_exAlumnos .container-Main_exAlumos .title_exAlumnos {
+  font-family: 'Georgia', serif;
+  color: #ffffff;
   font-size: 3rem;
-  font-family: "Abril Fatface";
-  margin: 20px 260px 0 0;
-}
-
-.u-section-6 .u-layout-cell-2 {
-  min-height: 378px;
-}
-
-.u-section-6 .u-image-1 {
-  object-position: 87.83% 50%;
-  width: 264px;
-  left: auto;
-  right: 1px;
-  margin-left: 20px;
-}
-
-.u-section-6 .u-layout-cell-3 {
-  min-height: 432px;
-}
-
-.u-section-6 .u-text-2 {
-  font-style: italic;
   font-weight: 800;
-  margin: 9px 20px 0 29px;
+  word-wrap: break-word;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.u-section-6 .u-btn-1 {
-  background-image: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.875rem;
-  letter-spacing: 1px;
-  border-style: none;
-  margin: 9px auto 0 29px;
+.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-@media (max-width: 1199px) {
-  .u-section-6 .u-layout-wrap-1 {
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-section-6 .u-container-layout-1 {
-    padding-left: 16px;
-  }
-
-  .u-section-6 .u-line-1 {
-    width: 633px;
-  }
-
-  .u-section-6 .u-text-1 {
-    margin-right: 214px;
-  }
-
-  .u-section-6 .u-layout-cell-2 {
-    background-position: 50% 50%;
-  }
-
-  .u-section-6 .u-image-1 {
-    margin-left: initial;
-  }
-
-  .u-section-6 .u-layout-cell-3 {
-    min-height: 378px;
-  }
-
-  .u-section-6 .u-text-2 {
-    margin-left: 16px;
-    margin-right: 16px;
-    position: relative;
-  }
-
-  .u-section-6 .u-btn-1 {
-    margin-left: 16px;
-    margin-right: 16px;
-    position: relative;
-  }
+.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .containerImg_exAlumnos {
+  width: 30%;
+  min-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media (max-width: 991px) {
-  .u-section-6 .u-layout-cell-1 {
-    min-height: 135px;
-  }
-
-  .u-section-6 .u-container-layout-1 {
-    padding-left: 13px;
-  }
-
-  .u-section-6 .u-line-1 {
-    width: 485px;
-  }
-
-  .u-section-6 .u-text-1 {
-    margin-right: 164px;
-  }
-
-  .u-section-6 .u-layout-cell-2 {
-    min-height: 239px;
-  }
-
-  .u-section-6 .u-layout-cell-3 {
-    min-height: 273px;
-  }
-
-  .u-section-6 .u-text-2 {
-    margin-left: 13px;
-    margin-right: 13px;
-  }
-
-  .u-section-6 .u-btn-1 {
-    margin-left: 13px;
-    margin-right: 13px;
-  }
+.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .containerImg_exAlumnos .imgLucas_exAlumnos {
+  width: 80%;
 }
 
-@media (max-width: 767px) {
-  .u-section-6 .u-layout-cell-1 {
-    min-height: 101px;
-  }
+.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos {
+  width: 70%;
+}
 
-  .u-section-6 .u-container-layout-1 {
-    padding-left: 9px;
-  }
+.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos .textLucas_exAlumnos {
+  width: 100%;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #ffffff;
+}
 
-  .u-section-6 .u-line-1 {
-    width: 454px;
-  }
+.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos .textFelicitaciones_exAlumnos {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
 
-  .u-section-6 .u-text-1 {
-    margin-right: 123px;
-  }
-
-  .u-section-6 .u-layout-cell-2 {
-    min-height: 717px;
-  }
-
-  .u-section-6 .u-text-2 {
-    margin-left: 9px;
-    margin-right: 9px;
-  }
-
-  .u-section-6 .u-btn-1 {
-    margin-left: 9px;
-    margin-right: 9px;
-  }
+.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos .btnVerNota_exAlumnos {
+  width: 200px;
 }
 
 @media (max-width: 575px) {
-  .u-section-6 .u-sheet-1 {
-    min-height: 1286px;
+  .seccion_exAlumnos .lineWhite_exAlumnos {
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 20px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
-
-  .u-section-6 .u-layout-wrap-1 {
-    margin-top: 1px;
-    margin-right: initial;
-    margin-left: initial;
+  .seccion_exAlumnos .container-Main_exAlumos {
+    margin-bottom: 50px;
   }
-
-  .u-section-6 .u-layout-cell-1 {
-    min-height: 64px;
+  .seccion_exAlumnos .container-Main_exAlumos .title_exAlumnos {
+    font-size: 2.5rem;
+    font-weight: 500;
   }
-
-  .u-section-6 .u-container-layout-1 {
-    padding-left: 6px;
+  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
-  .u-section-6 .u-line-1 {
-    width: 340px;
+  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .containerImg_exAlumnos {
+    width: 100%;
+    min-width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
-  .u-section-6 .u-text-1 {
-    margin-right: 78px;
+  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .containerImg_exAlumnos .imgLucas_exAlumnos {
+    width: 100%;
   }
-
-  .u-section-6 .u-layout-cell-2 {
-    min-height: 451px;
+  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos {
+    width: 95%;
   }
-
-  .u-section-6 .u-image-1 {
-    height: 387px;
-    left: auto;
-    bottom: auto;
-    right: auto;
-    top: auto;
-    margin: 30px auto -6px 28px;
+  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos .textLucas_exAlumnos {
+    margin-top: 40px;
   }
-
-  .u-section-6 .u-layout-cell-3 {
-    min-height: 172px;
+  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos .textFelicitaciones_exAlumnos {
+    font-weight: 600;
   }
-
-  .u-section-6 .u-text-2 {
-    margin-left: 6px;
-    margin-right: 6px;
-  }
-
-  .u-section-6 .u-btn-1 {
-    margin-left: 6px;
-    margin-right: 6px;
-  }
-}.u-section-7 {
-  min-height: 560px;
-}
-
-.u-section-7 .u-layout-wrap-1 {
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-layout-cell-1 {
-  min-height: 560px;
-  background-image: none;
-}
-
-.u-section-7 .u-container-layout-1 {
-  padding-left: 111px;
-}
-
-.u-section-7 .u-line-1 {
-  width: 272px;
-  height: 3px;
-  transform-origin: right center 0px;
-  margin: 122px auto 0 0;
-}
-
-.u-section-7 .u-text-1 {
-  font-size: 3rem;
-  font-family: "Abril Fatface";
-  margin: 20px 20px 0 0;
-}
-
-.u-section-7 .u-text-2 {
-  letter-spacing: 1px;
-  margin: 30px 11px 0 0;
-}
-
-.u-section-7 .u-text-3 {
-  font-size: 1.875rem;
-  font-weight: 900;
-  margin: 11px 11px 0 0;
-}
-
-.u-section-7 .u-text-4 {
-  letter-spacing: 1px;
-  font-size: 1.25rem;
-  margin: 11px 11px 0 0;
-}
-
-.u-section-7 .u-image-1 {
-  min-height: 560px;
-  background-image: url("images/ScreenShot2021-02-26at12.06.51PM.png");
-  background-position: 50% 50%;
-}
-
-@media (max-width: 1199px) {
-  .u-section-7 .u-layout-wrap-1 {
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-section-7 .u-container-layout-1 {
-    padding-left: 91px;
-  }
-
-  .u-section-7 .u-line-1 {
-    width: 224px;
-    transform-origin: right center 0;
-    margin-top: 55px;
-  }
-
-  .u-section-7 .u-text-1 {
-    margin-right: 16px;
-  }
-
-  .u-section-7 .u-text-2 {
-    margin-right: 9px;
-  }
-
-  .u-section-7 .u-text-3 {
-    margin-right: 9px;
-  }
-
-  .u-section-7 .u-text-4 {
-    margin-right: 9px;
+  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos .btnVerNota_exAlumnos {
+    width: 200px;
   }
 }
-
-@media (max-width: 991px) {
-  .u-section-7 .u-layout-cell-1 {
-    min-height: 354px;
-  }
-
-  .u-section-7 .u-container-layout-1 {
-    padding-left: 70px;
-  }
-
-  .u-section-7 .u-line-1 {
-    width: 172px;
-  }
-
-  .u-section-7 .u-text-1 {
-    margin-right: 13px;
-  }
-
-  .u-section-7 .u-text-2 {
-    margin-right: 7px;
-  }
-
-  .u-section-7 .u-text-3 {
-    font-size: 1.125rem;
-    margin-right: 7px;
-  }
-
-  .u-section-7 .u-text-4 {
-    font-size: 1rem;
-    margin-right: 7px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-7 .u-layout-cell-1 {
-    min-height: 797px;
-  }
-
-  .u-section-7 .u-container-layout-1 {
-    padding-left: 52px;
-  }
-
-  .u-section-7 .u-line-1 {
-    width: 161px;
-  }
-
-  .u-section-7 .u-text-1 {
-    margin-right: 9px;
-  }
-
-  .u-section-7 .u-text-2 {
-    margin-right: 5px;
-  }
-
-  .u-section-7 .u-text-3 {
-    margin-right: 5px;
-  }
-
-  .u-section-7 .u-text-4 {
-    margin-right: 5px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-7 .u-layout-cell-1 {
-    min-height: 328px;
-  }
-
-  .u-section-7 .u-container-layout-1 {
-    padding-left: 33px;
-  }
-
-  .u-section-7 .u-line-1 {
-    width: 135px;
-  }
-
-  .u-section-7 .u-text-1 {
-    margin-right: 6px;
-  }
-
-  .u-section-7 .u-text-2 {
-    margin-right: 3px;
-  }
-
-  .u-section-7 .u-text-3 {
-    margin-right: 3px;
-  }
-
-  .u-section-7 .u-text-4 {
-    margin-right: 3px;
-  }
-}
+/*# sourceMappingURL=home.css.map */
