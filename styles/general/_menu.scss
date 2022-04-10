@@ -1,2 +1,11 @@
 @import "./variables";
 
+.header-enabled{ //Funcion de JS para efecto onscroll de header
+    box-shadow: 0 2px 4px 1px #9CAFC350;
+    transition: opacity .1s ease-in; 
+    opacity: 1;
+    }        
+.header-off { //Funcion de JS para efecto onscroll de header
+    transition: opacity .1s ease-in; 
+    opacity: 0;
+}

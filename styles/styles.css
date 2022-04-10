@@ -18,6 +18,20 @@
 /********************* Line-Heig **********************/
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&diaplay=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700|Abril+Fatface:40");
+.header-enabled {
+  -webkit-box-shadow: 0 2px 4px 1px #9CAFC350;
+          box-shadow: 0 2px 4px 1px #9CAFC350;
+  -webkit-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+  opacity: 1;
+}
+
+.header-off {
+  -webkit-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+  opacity: 0;
+}
+
 /************************ Font Family *************************/
 /************************ Font Color *************************/
 /* MAIN COLORS */
