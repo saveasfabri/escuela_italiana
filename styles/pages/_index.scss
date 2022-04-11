@@ -1,44 +1,38 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&diaplay=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700|Abril+Fatface:40");
-/************************ Font Family *************************/
-/************************ Font Color *************************/
-/* MAIN COLORS */
-/* HOVER */
-/********************* Background Color **********************/
-/********************* Box-Shadow **********************/
-/********************* Line-Heig **********************/
+
+
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .body_index {
   position: relative;
   height: auto;
   min-height: 100%;
-  color: #111111;
+  color: #111111; 
   font-size: 1rem;
   background-color: #ffffff;
   font-family: 'Open Sans',sans-serif;
 }
 
 /***************************** VIDEO - HOME_index *****************************/
+
 .u-section-1 .u-sheet-1 {
   min-height: 600px;
 }
 
 .u-section-1 .u-text-1 {
-  font-family: 'Georgia', serif;
+  @include georgia;
   font-size: 4.5rem;
   letter-spacing: -1px;
   line-height: 5rem;
-  text-shadow: -2px -2px 8px black;
+  text-shadow: -2px -2px 8px rgb(0, 0, 0);
   margin: 151px 637px 0 90px;
+
 }
 
 .u-section-1 .u-text-2 {
   font-weight: 700;
-  text-shadow: -2px -2px 8px black;
+  text-shadow: -2px -2px 8px rgb(0, 0, 0);
   margin: 7px 450px 60px 90px;
 }
 
@@ -54,6 +48,7 @@
     margin-left: 0;
     margin-right: 528px;
   }
+
   .u-section-1 .u-text-2 {
     margin-right: 340px;
     margin-left: 0;
@@ -64,6 +59,7 @@
   .u-section-1 .u-text-1 {
     margin-right: 308px;
   }
+
   .u-section-1 .u-text-2 {
     margin-right: 120px;
   }
@@ -73,9 +69,11 @@
   .u-section-1 .u-text-1 {
     margin-right: 128px;
   }
+
   .u-section-1 .u-text-2 {
     margin-right: 0;
   }
+
   .u-section-1 .embed-responsive-1 {
     height: 100%;
     width: 198%;
@@ -87,9 +85,10 @@
 @media (max-width: 575px) {
   .u-section-1 .u-text-1 {
     margin: 130px 6px 0 15px;
-    font-size: 2.25rem;
+    font-size: 2.25rem;    
     line-height: 3rem;
   }
+
   .u-section-1 .u-text-2 {
     margin: 50px 30px 0px 15px;
     letter-spacing: .2rem;
@@ -102,6 +101,7 @@
 }
 
 /************************** SECCION NUESTRA HISTORIA *****************************/
+
 .u-section-2 {
   background-image: none;
 }
@@ -115,15 +115,14 @@
   border-radius: 25px;
   background-color: #ffffff;
   color: #000000;
-  -webkit-box-shadow: 8px 8px 6px #1f1f1fd8;
-          box-shadow: 8px 8px 6px #1f1f1fd8;
+  box-shadow: 8px 8px 6px #1f1f1fd8;
 }
 
 .u-section-2 .u-image-1 {
   min-height: 504px;
   background-image: url("/images/index_img/index1_nuestraHistoria.JPG");
   background-position: 50% 50%;
-  border-radius: 22px 0 0 22px;
+  border-radius: 22px 0 0 22px
 }
 
 .u-section-2 .u-layout-cell-2 {
@@ -138,14 +137,13 @@
 .u-section-2 .u-line-1 {
   width: 691px;
   height: 3px;
-  -webkit-transform-origin: left center 0;
-          transform-origin: left center 0;
+  transform-origin: left center 0;
   margin: 72px 20px 0 auto;
 }
 
 .u-section-2 .u-text-1 {
   font-size: 3rem;
-  font-family: 'Georgia', serif;
+  @include georgia;
   font-weight: bold;
   margin: 20px 20px 0 0;
 }
@@ -169,8 +167,7 @@
   font-weight: 800;
   margin: 20px auto 50px 0;
   border-radius: 25px;
-  -webkit-box-shadow: 5px 5px 6px #1f1f1f52;
-          box-shadow: 5px 5px 6px #1f1f1f52;
+  box-shadow: 5px 5px 6px #1f1f1f52;
 }
 
 @media (max-width: 1199px) {
@@ -178,24 +175,30 @@
     margin-right: initial;
     margin-left: initial;
   }
+
   .u-section-2 .u-image-1 {
     background-position: 25.93% 50%;
   }
+
   .u-section-2 .u-container-layout-2 {
     padding-left: 40px;
   }
+
   .u-section-2 .u-line-1 {
     width: 594px;
     margin-right: 16px;
   }
+
   .u-section-2 .u-text-1 {
     position: relative;
     margin-right: 16px;
   }
+
   .u-section-2 .u-text-2 {
     position: relative;
     margin-right: 16px;
   }
+
   .u-section-2 .u-btn-1 {
     position: relative;
     height: 42px;
@@ -207,26 +210,33 @@
   .u-section-2 .u-sheet-1 {
     min-height: 412px;
   }
+
   .u-section-2 .u-image-1 {
     min-height: 319px;
   }
+
   .u-section-2 .u-layout-cell-2 {
     min-height: 319px;
   }
+
   .u-section-2 .u-container-layout-2 {
     padding-left: 31px;
   }
+
   .u-section-2 .u-line-1 {
     width: 455px;
     margin-top: 36px;
     margin-right: 13px;
   }
+
   .u-section-2 .u-text-1 {
     margin-right: 13px;
   }
+
   .u-section-2 .u-text-2 {
     margin-right: 20px;
   }
+
   .u-section-2 .u-btn-1 {
     margin-right: 13px;
     margin-bottom: 36px;
@@ -237,22 +247,28 @@
   .u-section-2 .u-image-1 {
     min-height: 718px;
   }
+
   .u-section-2 .u-layout-cell-2 {
     min-height: 359px;
   }
+
   .u-section-2 .u-container-layout-2 {
     padding-left: 23px;
   }
+
   .u-section-2 .u-line-1 {
     width: 426px;
     margin-right: 9px;
   }
+
   .u-section-2 .u-text-1 {
     margin-right: 9px;
   }
+
   .u-section-2 .u-text-2 {
     margin-right: 9px;
   }
+
   .u-section-2 .u-btn-1 {
     margin-right: 9px;
   }
@@ -260,44 +276,54 @@
 
 @media (max-width: 575px) {
   .u-section-2 .u-layout-wrap-1 {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
+
   .u-section-2 .u-image-1 {
     min-height: 504px;
     border-radius: 22px 22px 0 0;
   }
+
   .u-section-2 .u-image-1 {
     min-height: 452px;
   }
+
   .u-section-2 .u-layout-cell-2 {
     min-height: 226px;
     border-radius: 25px 25px 0 0;
   }
+
   .u-section-2 .u-container-layout-2 {
     padding-left: 15px;
   }
+
   .u-section-2 .u-line-1 {
     margin-right: initial;
     margin-left: initial;
     width: auto;
   }
+
   .u-section-2 .u-text-1 {
     margin-left: 6px;
     margin-right: 13px;
   }
+
   .u-section-2 .u-text-2 {
     margin-right: 6px;
     margin-left: 6px;
     text-align: left;
   }
+
   .u-section-2 .u-btn-1 {
     margin-right: 6px;
     margin-left: 6px;
-  }
+  }  
+
+  
 }
 
 /***************************** SECCION OFERTA PEDAGOGICA *****************************/
+
 .u-section-3 {
   background-image: none;
 }
@@ -321,7 +347,7 @@
 }
 
 .u-section-3 .u-text-1 {
-  font-family: 'Georgia', serif;
+  @include georgia;
   font-size: 3rem;
   font-weight: 800;
   margin-left: 0;
@@ -333,8 +359,7 @@
 .u-section-3 .u-line-1 {
   width: 1100px;
   height: 3px;
-  -webkit-transform-origin: left center 0;
-          transform-origin: left center 0;
+  transform-origin: left center 0;
   margin: 30px auto 15px;
 }
 
@@ -366,8 +391,7 @@
   text-transform: uppercase;
   font-weight: 900;
   border-radius: 25px;
-  -webkit-box-shadow: 6px 6px 4px #1f1f1f;
-          box-shadow: 6px 6px 4px #1f1f1f;
+  box-shadow: 6px 6px 4px #1f1f1f;
 }
 
 .u-section-3 .u-layout-cell-3 {
@@ -380,8 +404,7 @@
   height: 110%;
   background-color: #ffffff15;
   border-radius: 25px;
-  -webkit-box-shadow: 8px 8px 6px #1f1f1f65;
-          box-shadow: 8px 8px 6px #1f1f1f65;
+  box-shadow: 8px 8px 6px #1f1f1f65;
 }
 
 .u-section-3 .u-text-3 {
@@ -400,37 +423,45 @@
   .u-section-3 .u-sheet-1 {
     min-height: 431px;
   }
+
   .u-section-3 .u-layout-wrap-1 {
     margin-right: initial;
     margin-left: initial;
   }
+
   .u-section-3 .u-container-layout-1 {
     padding-left: 16px;
     padding-right: 16px;
   }
+
   .u-section-3 .u-text-1 {
     margin-left: 16px;
     margin-right: 16px;
     position: relative;
   }
+
   .u-section-3 .u-line-1 {
     width: 907px;
   }
+
   .u-section-3 .u-text-2 {
     margin-left: 16px;
     margin-right: 16px;
     position: relative;
-  }
+  }  
+
   .u-section-3 .u-btn-1 {
     margin-left: 16px;
     margin-right: 16px;
     position: relative;
   }
+
   .u-section-3 .u-text-3 {
     margin-left: 16px;
     margin-right: 16px;
     position: relative;
   }
+
   .u-section-3 .u-text-4 {
     margin-left: 16px;
     margin-right: 16px;
@@ -442,38 +473,48 @@
   .u-section-3 .u-sheet-1 {
     min-height: 306px;
   }
+
   .u-section-3 .u-layout-cell-1 {
     min-height: 94px;
   }
+
   .u-section-3 .u-container-layout-1 {
     padding-left: 13px;
     padding-right: 13px;
   }
+
   .u-section-3 .u-text-1 {
     margin-left: 13px;
     margin-right: 13px;
   }
+
   .u-section-3 .u-line-1 {
     width: 695px;
   }
+
   .u-section-3 .u-layout-cell-2 {
     min-height: 155px;
   }
+
   .u-section-3 .u-text-2 {
     margin-left: 13px;
     margin-right: 13px;
   }
+
   .u-section-3 .u-btn-1 {
     margin-left: 13px;
     margin-right: 13px;
   }
+
   .u-section-3 .u-layout-cell-3 {
     min-height: 306px;
   }
+
   .u-section-3 .u-text-3 {
     margin-left: 13px;
     margin-right: 13px;
   }
+
   .u-section-3 .u-text-4 {
     margin-left: 13px;
     margin-right: 13px;
@@ -484,38 +525,48 @@
   .u-section-3 .u-sheet-1 {
     min-height: 406px;
   }
+
   .u-section-3 .u-layout-cell-1 {
     min-height: 71px;
   }
+
   .u-section-3 .u-container-layout-1 {
     padding-left: 9px;
     padding-right: 9px;
   }
+
   .u-section-3 .u-text-1 {
     margin-left: 9px;
     margin-right: 9px;
   }
+
   .u-section-3 .u-line-1 {
     width: 540px;
   }
+
   .u-section-3 .u-layout-cell-2 {
     min-height: 233px;
   }
+
   .u-section-3 .u-text-2 {
     margin-left: 9px;
     margin-right: 9px;
   }
+
   .u-section-3 .u-btn-1 {
     margin-left: 9px;
     margin-right: 9px;
   }
+
   .u-section-3 .u-layout-cell-3 {
     min-height: 240px;
   }
+
   .u-section-3 .u-text-3 {
     margin-left: 9px;
     margin-right: 9px;
   }
+
   .u-section-3 .u-text-4 {
     margin-left: 9px;
     margin-right: 9px;
@@ -526,10 +577,12 @@
   .u-section-3 .u-layout-cell-1 {
     min-height: 45px;
   }
+
   .u-section-3 .u-container-layout-1 {
     padding-left: 6px;
     padding-right: 6px;
   }
+
   .u-section-3 .u-text-1 {
     margin-left: 6px;
     margin-right: 6px;
@@ -537,31 +590,38 @@
     font-weight: 500;
     letter-spacing: 2px;
   }
+
   .u-section-3 .u-line-1 {
     width: 180px;
     margin: 40px auto 0 20px;
   }
+
   .u-section-3 .u-layout-cell-2 {
     margin-bottom: 30px;
     min-height: 147px;
   }
+
   .u-section-3 .u-text-2 {
     font-weight: 500;
     margin-left: 6px;
     margin-right: 6px;
   }
+
   .u-section-3 .u-btn-1 {
-    margin: 10px 6px;
+    margin: 10px 6px ;
     margin-left: 15px;
     margin-right: 6px;
   }
+
   .u-section-3 .u-layout-cell-3 {
     min-height: 147px;
   }
+
   .u-section-3 .u-text-3 {
     margin-left: 25px;
     margin-right: 6px;
   }
+
   .u-section-3 .u-text-4 {
     margin-left: 10px;
     margin-right: 10px;
@@ -569,6 +629,7 @@
 }
 
 /***************************** SECCION ULTIMAS NOTICIAS *****************************/
+
 .u-section-4 {
   background-image: none;
   margin-top: 40px;
@@ -596,24 +657,23 @@
 }
 
 .u-section-4 .u-text-1 {
-  font-family: 'Abril Fatface',cursive;
-  font-size: 12rem;
+  @include abrilFatface;
+  font-size: 12rem;  
   margin: -99px 256px 0 -7px;
 }
 
 .u-section-4 .u-line-1 {
   width: 221px;
   height: 3px;
-  -webkit-transform-origin: left center 0px;
-          transform-origin: left center 0px;
+  transform-origin: left center 0px;
   margin: -20px auto 0 0;
 }
 
 .u-section-4 .u-text-2 {
-  font-family: Oswald, sans-serif;
+  @include oswald;
   font-size: 3rem;
   font-weight: 400;
-  margin: 30px 9px 0 0;
+  margin: 30px 9px 0 0;  
 }
 
 .u-section-4 .u-text-3 {
@@ -629,8 +689,7 @@
   text-transform: uppercase;
   font-weight: 800;
   border-radius: 25px;
-  -webkit-box-shadow: 5px 5px 6px #1f1f1fb0;
-          box-shadow: 5px 5px 6px #1f1f1fb0;
+  box-shadow: 5px 5px 6px #1f1f1fb0;
 }
 
 .u-section-4 .u-layout-cell-2 {
@@ -641,8 +700,7 @@
   width: 635px;
   height: 410px;
   margin: 35px auto 0 -65px;
-  -webkit-box-shadow: 8px 8px 6px #1f1f1f65;
-          box-shadow: 8px 8px 6px #1f1f1f65;
+  box-shadow: 8px 8px 6px #1f1f1f65
 }
 
 .u-section-4 .u-layout-cell-3 {
@@ -674,28 +732,35 @@
     margin-right: initial;
     margin-left: initial;
   }
+
   .u-section-4 .u-container-layout-1 {
     padding-left: 16px;
   }
+
   .u-section-4 .u-shape-1 {
     margin-right: initial;
   }
+
   .u-section-4 .u-text-1 {
     margin-top: -461px;
     margin-right: 606px;
     margin-left: 50px;
   }
+
   .u-section-4 .u-line-1 {
     width: 182px;
     margin-top: 100px;
   }
+
   .u-section-4 .u-text-2 {
     position: relative;
     margin-right: 8px;
   }
+
   .u-section-4 .u-text-3 {
     margin-right: 61px;
   }
+
   .u-section-4 .u-image-1 {
     width: 546px;
     height: 333px;
@@ -703,13 +768,16 @@
     margin-bottom: 50px;
     margin-left: -76px;
   }
+
   .u-section-4 .u-layout-cell-3 {
     min-height: 181px;
   }
+
   .u-section-4 .u-container-layout-3 {
     padding-left: 8px;
     padding-right: 8px;
   }
+
   .u-section-4 .u-text-4 {
     width: 515px;
   }
@@ -719,44 +787,55 @@
   .u-section-4 .u-sheet-1 {
     min-height: 1122px;
   }
+
   .u-section-4 .u-layout-cell-1 {
     min-height: 303px;
   }
+
   .u-section-4 .u-container-layout-1 {
     padding-left: 13px;
   }
+
   .u-section-4 .u-text-1 {
     margin-top: -669px;
     margin-right: 426px;
     margin-left: 49px;
   }
+
   .u-section-4 .u-line-1 {
     width: 140px;
     margin-top: 308px;
   }
+
   .u-section-4 .u-text-2 {
     margin-right: 6px;
   }
+
   .u-section-4 .u-text-3 {
     position: relative;
     margin-right: 47px;
   }
+
   .u-section-4 .u-layout-cell-2 {
     min-height: 303px;
   }
+
   .u-section-4 .u-image-1 {
     width: 439px;
     margin-top: 167px;
     margin-bottom: 65px;
     margin-left: -79px;
   }
+
   .u-section-4 .u-layout-cell-3 {
     min-height: 139px;
   }
+
   .u-section-4 .u-container-layout-3 {
     padding-left: 6px;
     padding-right: 6px;
   }
+
   .u-section-4 .u-text-4 {
     width: 395px;
     position: relative;
@@ -767,43 +846,54 @@
   .u-section-4 .u-sheet-1 {
     min-height: 1339px;
   }
+
   .u-section-4 .u-layout-cell-1 {
     min-height: 455px;
   }
+
   .u-section-4 .u-container-layout-1 {
     padding-left: 9px;
   }
+
   .u-section-4 .u-text-1 {
     margin-top: -1065px;
     margin-right: 169px;
     margin-left: 38px;
   }
+
   .u-section-4 .u-line-1 {
     width: 221px;
     margin-top: 1249px;
   }
+
   .u-section-4 .u-text-2 {
     margin-right: 9px;
   }
+
   .u-section-4 .u-text-3 {
     margin-right: 74px;
   }
+
   .u-section-4 .u-layout-cell-2 {
     min-height: 455px;
   }
+
   .u-section-4 .u-image-1 {
     width: 476px;
     margin-top: -76px;
     margin-left: auto;
     margin-bottom: 46px;
   }
+
   .u-section-4 .u-layout-cell-3 {
     min-height: 104px;
   }
+
   .u-section-4 .u-container-layout-3 {
     padding-left: 5px;
     padding-right: 5px;
   }
+
   .u-section-4 .u-text-4 {
     width: 370px;
   }
@@ -813,69 +903,85 @@
   .u-background-white {
     margin-bottom: 30px;
   }
+
   .u-section-4 .u-shape-1 {
     margin-top: 60px;
   }
+
   .u-section-4 .u-sheet-1 {
     min-height: 1249px;
   }
+
   .u-section-4 .u-layout-cell-1 {
     min-height: 286px;
   }
+
   .u-section-4 .u-container-layout-1 {
     padding-left: 6px;
   }
+
   .u-section-4 .u-text-1 {
     width: auto;
     margin-top: -31px;
     margin-right: 31px;
     margin-left: 6px;
   }
+
   .u-section-4 .u-line-1 {
     width: 250px;
     margin-left: 10px;
     margin-top: 14px;
   }
+
   .u-section-4 .u-text-2 {
     width: auto;
     margin-top: 20px;
     margin-right: 24px;
     margin-left: 18px;
   }
+
   .u-section-4 .u-text-3 {
     width: auto;
     margin-top: 30px;
     margin-right: 10px;
     margin-left: 10px;
   }
+
   .btn-white_seccOfertaPed-3 {
     margin: 40px 0 20px 10px;
   }
+
   .u-section-4 .u-layout-cell-2 {
     min-height: 198px;
   }
+
   .u-section-4 .u-image-1 {
     height: 243px;
     width: 294px;
     margin-top: 20px;
     margin-bottom: 0;
   }
+
   .u-section-4 .u-layout-cell-3 {
     min-height: 65px;
   }
+
   .u-section-4 .u-container-layout-3 {
     padding-left: 3px;
     padding-right: 3px;
   }
+
   .u-section-4 .u-text-3 {
     font-weight: 600;
   }
+
   .u-section-4 .u-text-4 {
     width: 311px;
   }
 }
 
 /********************* SECCION NIVELES/ESCUELA PARITARIA **********************/
+
 .u-section-5 {
   min-height: 664px;
 }
@@ -897,13 +1003,12 @@
 .u-section-5 .u-line-1 {
   width: 272px;
   height: 3px;
-  -webkit-transform-origin: right center 0px;
-          transform-origin: right center 0px;
+  transform-origin: right center 0px;
   margin: 144px auto 0 0;
 }
 
 .u-section-5 .u-text-1 {
-  font-family: 'Georgia', serif;
+  @include georgia;
   font-size: 3rem;
   font-weight: 600;
   margin: 23px 20px 0 0;
@@ -956,23 +1061,29 @@
   .u-section-5 .u-container-layout-1 {
     padding-left: 91px;
   }
+
   .u-section-5 .u-line-1 {
     width: 224px;
   }
+
   .u-section-5 .u-text-1 {
     margin-right: 16px;
   }
+
   .u-section-5 .u-text-2 {
     position: relative;
     margin-right: 16px;
   }
+
   .u-section-5 .u-container-layout-5 {
     padding-left: 16px;
   }
+
   .u-section-5 .u-text-3 {
     margin-top: 28px;
     margin-right: 94px;
   }
+
   .u-section-5 .u-text-4 {
     margin-right: 88px;
   }
@@ -982,30 +1093,39 @@
   .u-section-5 .u-layout-cell-1 {
     min-height: 1259px;
   }
+
   .u-section-5 .u-container-layout-1 {
     padding-left: 70px;
   }
+
   .u-section-5 .u-line-1 {
     width: 172px;
   }
+
   .u-section-5 .u-text-1 {
     margin-right: 13px;
   }
+
   .u-section-5 .u-text-2 {
     margin-right: 13px;
   }
+
   .u-section-5 .u-image-2 {
     min-height: 576px;
   }
+
   .u-section-5 .u-layout-cell-5 {
     min-height: 315px;
   }
+
   .u-section-5 .u-container-layout-5 {
     padding-left: 13px;
   }
+
   .u-section-5 .u-text-3 {
     margin-right: 72px;
   }
+
   .u-section-5 .u-text-4 {
     margin-right: 68px;
   }
@@ -1015,27 +1135,35 @@
   .u-section-5 .u-layout-cell-1 {
     min-height: 944px;
   }
+
   .u-section-5 .u-container-layout-1 {
     padding-left: 52px;
   }
+
   .u-section-5 .u-line-1 {
     width: 161px;
   }
+
   .u-section-5 .u-text-1 {
     margin-right: 9px;
   }
+
   .u-section-5 .u-text-2 {
     margin-right: 9px;
   }
+
   .u-section-5 .u-layout-cell-5 {
     min-height: 354px;
   }
+
   .u-section-5 .u-container-layout-5 {
     padding-left: 9px;
   }
+
   .u-section-5 .u-text-3 {
     margin-right: 54px;
   }
+
   .u-section-5 .u-text-4 {
     margin-right: 51px;
   }
@@ -1045,33 +1173,41 @@
   .u-section-5 {
     min-height: 1959px;
   }
+
   .u-section-5 .u-layout-cell-1 {
     min-height: 459px;
   }
+
   .u-section-5 .u-container-layout-1 {
     padding-left: 20px;
   }
+
   .u-section-5 .u-line-1 {
     width: 135px;
     margin-top: 50px;
   }
+
   .u-section-5 .u-text-1 {
     width: 100%;
     margin: 25px 0 0 0;
     text-align: left;
   }
+
   .u-section-5 .u-text-2 {
     width: auto;
     margin-top: 20px;
     margin-right: 20px;
   }
+
   .u-section-5 .u-layout-cell-5 {
     min-height: 260px;
   }
+
   .u-section-5 .u-container-layout-5 {
     padding-left: 0;
     margin-bottom: 50px;
   }
+
   .u-section-5 .u-text-3 {
     width: auto;
     margin-top: 44px;
@@ -1079,6 +1215,7 @@
     margin-left: 35px;
     letter-spacing: 2px;
   }
+
   .u-section-5 .u-text-4 {
     width: auto;
     margin-top: 28px;
@@ -1088,148 +1225,137 @@
 }
 
 /************************** SECCION NUESTROS EX ALUMNOS **************************/
+
 .seccion_exAlumnos {
   width: 100%;
-  background-color: #7f9883;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  @include background-green-soft;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
+
+  .lineWhite_exAlumnos {
+    width: 70%;
+    height: 3px;
+    margin-top: 100px;
+    background-color: #ffffff;
+    align-self: center;
+  }
+  .container-Main_exAlumos {
+    width: 85%;
+    margin-bottom: 90px;
+
+    .title_exAlumnos {
+      @include georgia;
+      color: #ffffff;
+      font-size: 3rem;
+      font-weight: 800;
+      word-wrap: break-word;
+      box-sizing: border-box;
+    }
+    .group-imgText_exAlumnos {
+      width: 100%;
+      display: flex;
+
+      .containerImg_exAlumnos {
+        width: 30%;
+        min-width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .imgLucas_exAlumnos {
+          width: 80%;
+        }
+      }
+      
+      .group-textBtn_exAlumnos {
+        width: 70%;
+
+        .textLucas_exAlumnos{
+          width: 100%;
+          font-size: 1rem;
+          font-style: italic;
+          font-weight: 500;
+          color: #ffffff;
+        }
+        .textFelicitaciones_exAlumnos {
+          width: 100%;
+          font-size: 1rem;
+          font-weight: 500;
+          color: #ffffff;
+        }
+        .btnVerNota_exAlumnos {
+          width: 200px;
+        }
+      }
+    }
+  }
 }
 
-.seccion_exAlumnos .lineWhite_exAlumnos {
-  width: 70%;
-  height: 3px;
-  margin-top: 100px;
-  background-color: #ffffff;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+
+@media (max-width: 1199px) {
+  
 }
 
-.seccion_exAlumnos .container-Main_exAlumos {
-  width: 85%;
-  margin-bottom: 90px;
+@media (max-width: 991px) {
+  
 }
 
-.seccion_exAlumnos .container-Main_exAlumos .title_exAlumnos {
-  font-family: 'Georgia', serif;
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: 800;
-  word-wrap: break-word;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .containerImg_exAlumnos {
-  width: 30%;
-  min-width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .containerImg_exAlumnos .imgLucas_exAlumnos {
-  width: 80%;
-}
-
-.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos {
-  width: 70%;
-}
-
-.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos .textLucas_exAlumnos {
-  width: 100%;
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 500;
-  color: #ffffff;
-}
-
-.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos .textFelicitaciones_exAlumnos {
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #ffffff;
-}
-
-.seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos .btnVerNota_exAlumnos {
-  width: 200px;
+@media (max-width: 767px) {
+  
 }
 
 @media (max-width: 575px) {
-  .seccion_exAlumnos .lineWhite_exAlumnos {
-    width: 50%;
-    margin-top: 50px;
-    margin-left: 20px;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+  .seccion_exAlumnos {
+    
+    .lineWhite_exAlumnos {
+      width: 50%;
+      margin-top: 50px;
+      margin-left: 20px;
+      align-self: flex-start;
+    }
+    .container-Main_exAlumos {
+      margin-bottom: 50px;
+
+      .title_exAlumnos {
+        font-size: 2.5rem;
+        font-weight: 500;
+      }
+
+      .group-imgText_exAlumnos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .containerImg_exAlumnos {
+          width: 100%;
+          min-width: 200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          .imgLucas_exAlumnos {
+            width: 100%;
+          }
+        }
+        .group-textBtn_exAlumnos {
+          width: 95%;
+  
+          .textLucas_exAlumnos{
+            margin-top: 40px;
+          }
+          .textFelicitaciones_exAlumnos {
+            font-weight: 600;
+          }
+          .btnVerNota_exAlumnos {
+            width: 200px;
+          }
+        }
+      }
+    }
   }
-  .seccion_exAlumnos .container-Main_exAlumos {
-    margin-bottom: 50px;
-  }
-  .seccion_exAlumnos .container-Main_exAlumos .title_exAlumnos {
-    font-size: 2.5rem;
-    font-weight: 500;
-  }
-  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .containerImg_exAlumnos {
-    width: 100%;
-    min-width: 200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .containerImg_exAlumnos .imgLucas_exAlumnos {
-    width: 100%;
-  }
-  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos {
-    width: 95%;
-  }
-  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos .textLucas_exAlumnos {
-    margin-top: 40px;
-  }
-  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos .textFelicitaciones_exAlumnos {
-    font-weight: 600;
-  }
-  .seccion_exAlumnos .container-Main_exAlumos .group-imgText_exAlumnos .group-textBtn_exAlumnos .btnVerNota_exAlumnos {
-    width: 200px;
-  }
+  
+  
+  
 }
-/*# sourceMappingURL=home.css.map */
+

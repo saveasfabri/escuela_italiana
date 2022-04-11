@@ -1,7 +1,15 @@
-@import "./general/variables";
+/* @import "./general/variables";
 @import "./general/menu";
 @import "./general/btns";
-@import "./general/reset";
+@import "./general/reset"; */
+
+/* @import "./pages/index";
+@import "./pages/comedor";
+@import "./pages/contacto";
+@import "./pages/documentacion";
+@import "./pages/historia";
+@import "./pages/novedades";
+@import "./pages/propuesta"; */
 
 p, li, h5 {
     @include line-heig;

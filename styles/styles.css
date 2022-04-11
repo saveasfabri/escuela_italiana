@@ -21,14 +21,14 @@
 .header-enabled {
   -webkit-box-shadow: 0 2px 4px 1px #9CAFC350;
           box-shadow: 0 2px 4px 1px #9CAFC350;
-  -webkit-transition: opacity .5s ease-in;
-  transition: opacity .5s ease-in;
+  -webkit-transition: opacity .1s ease-in;
+  transition: opacity .1s ease-in;
   opacity: 1;
 }
 
 .header-off {
-  -webkit-transition: opacity .5s ease-in;
-  transition: opacity .5s ease-in;
+  -webkit-transition: opacity .1s ease-in;
+  transition: opacity .1s ease-in;
   opacity: 0;
 }
 
@@ -533,6 +533,13 @@ template {
   display: none;
 }
 
+/* @import "./pages/index";
+@import "./pages/comedor";
+@import "./pages/contacto";
+@import "./pages/documentacion";
+@import "./pages/historia";
+@import "./pages/novedades";
+@import "./pages/propuesta"; */
 p, li, h5 {
   line-height: 1.6rem;
 }
