@@ -4,12 +4,12 @@
 @import "./general/reset";
 
 @import "./pages/index";
-@import "./pages/comedor";
+/* @import "./pages/comedor";
 @import "./pages/contacto";
 @import "./pages/documentacion";
 @import "./pages/historia";
 @import "./pages/novedades";
-@import "./pages/propuesta";
+@import "./pages/propuesta"; */
 
 p, li, h5 {
     @include line-heig;
