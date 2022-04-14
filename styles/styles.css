@@ -233,7 +233,7 @@ header .container-logo-nav nav .ul-menu-descktop {
           box-shadow: none;
 }
 
-/* ************************************ MEDIA QUERY 800px ************************************** */
+/* ************************************ MEDIA QUERY 1024 ************************************** */
 @media screen and (min-width: 800px) {
   header {
     position: fixed;
