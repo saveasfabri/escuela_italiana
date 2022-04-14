@@ -11,6 +11,10 @@
 @import "./pages/novedades";
 @import "./pages/propuesta"; */
 
+* {
+    list-style: none;
+    text-decoration: none
+}
 p, li, h5 {
     @include line-heig;
 }

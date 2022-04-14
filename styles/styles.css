@@ -208,7 +208,32 @@ header .container-logo-nav nav .ul-menu-descktop {
   display: none;
 }
 
-/* ************************************** MEDIA QUERY 1024 ************************************** */
+.header-enabled {
+  -webkit-box-shadow: 0 2px 4px 1px #9CAFC350;
+          box-shadow: 0 2px 4px 1px #9CAFC350;
+  -webkit-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+  opacity: 1;
+}
+
+.header-off {
+  -webkit-transition: opacity .3s ease-in;
+  transition: opacity .3s ease-in;
+  opacity: 0;
+}
+
+.header-off:hover {
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  opacity: 1;
+}
+
+.header-shadow-off {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* ************************************ MEDIA QUERY 800px ************************************** */
 @media screen and (min-width: 800px) {
   header {
     position: fixed;
@@ -344,32 +369,6 @@ header .container-logo-nav nav .ul-menu-descktop {
   }
 }
 
-.header-enabled {
-  -webkit-box-shadow: 0 2px 4px 1px #9CAFC350;
-          box-shadow: 0 2px 4px 1px #9CAFC350;
-  -webkit-transition: opacity .5s ease-in;
-  transition: opacity .5s ease-in;
-  opacity: 1;
-}
-
-.header-off {
-  -webkit-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
-  opacity: 0;
-}
-
-.header-off:hover {
-  -webkit-transition: opacity .5s ease;
-  transition: opacity .5s ease;
-  opacity: 1;
-}
-
-.header-shadow-off {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-/* ************************************** MEDIA QUERY 1440 ************************************** */
 /************************ Font Family *************************/
 /************************ Font Color *************************/
 /* MAIN COLORS */
@@ -871,11 +870,6 @@ template {
   display: none;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 /***************************** VIDEO - HOME_index *****************************/
 /************************** SECCION NUESTRA HISTORIA *****************************/
 /***************************** SECCION OFERTA PEDAGOGICA *****************************/
@@ -888,6 +882,11 @@ template {
 @import "./pages/historia";
 @import "./pages/novedades";
 @import "./pages/propuesta"; */
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
 p, li, h5 {
   line-height: 1.6rem;
 }

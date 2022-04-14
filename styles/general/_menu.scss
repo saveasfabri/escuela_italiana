@@ -158,8 +158,24 @@ header {
     }/* End .nav MOBILE*/
   } /* End .container-logo-nav MOBILE */
 }
+.header-enabled{ //Funcion de JS para efecto onscroll de header
+  box-shadow: 0 2px 4px 1px #9CAFC350;
+  transition: opacity .5s ease-in; 
+  opacity: 1;
+}        
+.header-off { //Funcion de JS para efecto onscroll de header
+  transition: opacity .3s ease-in;        
+  opacity: 0;
+  &:hover{
+    transition: opacity .3s ease; 
+    opacity: 1; 
+  }
+}
+.header-shadow-off{  //efecto on/off en scroll del header
+  box-shadow: none;
+}
 
-/* ************************************** MEDIA QUERY 1024 ************************************** */
+/* ************************************ MEDIA QUERY 800px ************************************** */
 
 @media screen and (min-width: 800px) {
   header {
@@ -279,21 +295,5 @@ header {
     } /* End .container-logo-nav DESCKTOP*/
   }
 }
-.header-enabled{ //Funcion de JS para efecto onscroll de header
-  box-shadow: 0 2px 4px 1px #9CAFC350;
-  transition: opacity .5s ease-in; 
-  opacity: 1;
-}        
-.header-off { //Funcion de JS para efecto onscroll de header
-  transition: opacity 1s ease-in;        
-  opacity: 0;
-  &:hover{
-    transition: opacity .5s ease; 
-    opacity: 1; 
-  }
-}
-.header-shadow-off{  //efecto on/off en scroll del header
-  box-shadow: none;
-}
-/* ************************************** MEDIA QUERY 1440 ************************************** */
+
 
