@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&diaplay=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700|Abril+Fatface:40");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,400;1,600;1,800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap");
 /************************ Font Family *************************/
 /************************ Font Color *************************/
 /* MAIN COLORS */
@@ -7,14 +6,15 @@
 /********************* Background Color **********************/
 /********************* Box-Shadow **********************/
 /********************* Line-Heig **********************/
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&diaplay=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700|Abril+Fatface:40");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,400;1,600;1,800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap");
 header {
+  position: absolute;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.075);
           box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.075);
+  background-color: rgba(255, 255, 255, 0.973);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,6 +22,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 100;
   /* End .container-logo-nav MOBILE */
 }
 
@@ -33,7 +34,6 @@ header .green-line {
 header .container-logo-nav {
   width: 100%;
   height: 90px;
-  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,8 +47,9 @@ header .container-logo-nav {
 }
 
 header .container-logo-nav .logo {
-  width: 80%;
+  width: 70%;
   height: 100%;
+  margin-left: 20px;
   -o-object-fit: cover;
      object-fit: cover;
   display: -webkit-box;
@@ -69,6 +70,7 @@ header .container-logo-nav .logo .img-logo {
 header .container-logo-nav nav {
   width: 10%;
   height: 100%;
+  margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,11 +86,11 @@ header .container-logo-nav nav {
 
 header .container-logo-nav nav .ul-menu-mobile {
   position: absolute;
+  width: 0px;
+  height: 100vh;
   border-top: #ac242a solid 5px;
   top: 95px;
   right: 0px;
-  width: 0px;
-  height: 3000px;
   padding-left: 0px;
   padding-top: 32px;
   margin: 0;
@@ -233,7 +235,7 @@ header .container-logo-nav nav .ul-menu-descktop {
           box-shadow: none;
 }
 
-/* ************************************ MEDIA QUERY 1024 ************************************** */
+/* ************************************ MEDIA QUERY 800 ************************************** */
 @media screen and (min-width: 800px) {
   header {
     position: fixed;
@@ -870,7 +872,129 @@ template {
   display: none;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+}
+
 /***************************** VIDEO - HOME_index *****************************/
+.section-video-home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: solid 5px brown;
+}
+
+.section-video-home .container-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-bottom: blue 2px solid;
+  /* .blur-video {
+      position: absolute;
+      width: 100%;
+      height: 100%; 
+      opacity: .5;
+      background-color: black;
+      z-index: 10;
+    } */
+}
+
+.section-video-home .container-video .video {
+  position: absolute;
+  height: 105%;
+  left: -760px;
+  -webkit-filter: contrast(110%);
+          filter: contrast(110%);
+  z-index: -1;
+  border-bottom: solid 2px #00ff37;
+}
+
+.section-video-home .container-video .container-title {
+  position: absolute;
+  width: 0%;
+  height: 120px;
+  margin-top: 180px;
+  /* background-color: #16381c9c; */
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%, rgba(22, 56, 28, 0.05)), to(rgba(22, 56, 28, 0.7)));
+  background: linear-gradient(90deg, rgba(22, 56, 28, 0.05) 5%, rgba(22, 56, 28, 0.7) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: container-title 2s 1;
+          animation: container-title 2s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.section-video-home .container-video .container-title .title {
+  position: relative;
+  font-size: 50px;
+  font-family: 'Frank Ruhl Libre', serif;
+  color: #ffffff;
+  margin-right: 20px;
+  text-align: right;
+  left: 250px;
+  -webkit-animation: title 1s 1;
+          animation: title 1s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+
+@-webkit-keyframes container-title {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes container-title {
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes title {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes title {
+  100% {
+    left: 0;
+  }
+}
+
+.section-video-home .container-video .red-line-vertical {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-color: #df18228c;
+  z-index: 2;
+}
+
 /************************** SECCION NUESTRA HISTORIA *****************************/
 /***************************** SECCION OFERTA PEDAGOGICA *****************************/
 /***************************** SECCION ULTIMAS NOTICIAS *****************************/

@@ -1,113 +1,124 @@
-
+html {
+  height: 100%;
+}
+body {
+  height: 100vh;
+}
 /***************************** VIDEO - HOME_index *****************************/
 
-@media (max-width: 1199px) {
+.section-video-home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  border-bottom: solid 5px brown ;
 
+  .container-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: blue 2px solid;
+    
+    /* .blur-video {
+      position: absolute;
+      width: 100%;
+      height: 100%; 
+      opacity: .5;
+      background-color: black;
+      z-index: 10;
+    } */
+
+    .video {
+      position: absolute;
+      height: 105%;
+      left: -760px;
+      filter: contrast(110%);
+      z-index: -1;
+      border-bottom: solid 2px rgb(0, 255, 55);
+    }
+
+    .container-title {
+      position: absolute;
+      width: 0%;
+      height: 120px;
+      margin-top: 180px;
+      /* background-color: #16381c9c; */
+      background: linear-gradient(90deg,  rgba(22,56,28,0.05) 5%, rgba(22,56,28,.7) 100%);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      animation: container-title 2s 1;
+      animation-fill-mode: forwards;
+      animation-delay: 1.5s;
+
+      .title {
+        position: relative;
+        font-size: 50px;
+        @include frank;
+        color: #ffffff;
+        margin-right: 20px;
+        text-align: right;
+        left: 250px;
+        animation: title 1s 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.9s;
+      }
+    }
+
+    @keyframes container-title {
+      100% {width: 100%;}
+    }
+    @keyframes title {
+      100% {left: 0;}
+    }
+
+    .red-line-vertical {
+      position: absolute;
+      width: 10px;
+      height: 100%;
+      background-color: #df18228c;
+      z-index: 2;
+    } 
+  }
 }
-
-@media (max-width: 991px) {
-  
-}
-
-@media (max-width: 767px) {
-  
-}
-
-@media (max-width: 575px) {
+@media screen and (min-width: 800px) {
   
 }
 
 /************************** SECCION NUESTRA HISTORIA *****************************/
 
 
-@media (max-width: 1199px) {
-  
-}
-
-@media (max-width: 991px) {
-  
-}
-
-@media (max-width: 767px) {
-  
-}
-
-@media (max-width: 575px) {
+@media screen and (min-width: 800px) {
   
 }
 
 /***************************** SECCION OFERTA PEDAGOGICA *****************************/
 
 
-@media (max-width: 1199px) {
-  
-}
-
-@media (max-width: 991px) {
-  
-}
-
-@media (max-width: 767px) {
-  
-}
-
-@media (max-width: 575px) {
+@media screen and (min-width: 800px) {
   
 }
 
 /***************************** SECCION ULTIMAS NOTICIAS *****************************/
 
 
-@media (max-width: 1199px) {
-  
-}
-
-@media (max-width: 991px) {
-  
-}
-
-@media (max-width: 767px) {
-  
-}
-
-@media (max-width: 575px) {
+@media screen and (min-width: 800px) {
   
 }
 
 /********************* SECCION NIVELES/ESCUELA PARITARIA **********************/
 
 
-@media (max-width: 1199px) {
+@media screen and (min-width: 800px) {
   
 }
-
-@media (max-width: 991px) {
-  
-}
-
-@media (max-width: 767px) {
-  
-}
-
-@media (max-width: 575px) {
-  
-}
-
 /************************** SECCION NUESTROS EX ALUMNOS **************************/
 
 
-@media (max-width: 1199px) {
+@media screen and (min-width: 800px) {
   
-}
-
-@media (max-width: 991px) {
-  
-}
-
-@media (max-width: 767px) {
-  
-}
-
-@media (max-width: 575px) {
 }
 
