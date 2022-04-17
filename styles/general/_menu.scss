@@ -1,3 +1,4 @@
+@import 'variables';
 //menu mobile
 
 header {
@@ -62,7 +63,7 @@ header {
           .menu-items {
             display: block;
             position: relative;
-            font-family: 'Montserrat', sans-serif;
+            @include roboto;
             font-weight: 500;
             font-size: 15px;
             line-height: 30px;
@@ -184,6 +185,7 @@ header {
   header {
     position: fixed;
     width: 100%;
+    max-height: 80px;
     background-color: #ffffff;
     z-index: 100;
     .green-line {
@@ -203,11 +205,13 @@ header {
 
       nav {
         width: 70%;
+        margin: 0;
 
         .ul-menu-descktop {
           display: block;
           width: 100%;
-          margin-right: 5vw;
+          height: 60%;
+          margin: 0 5vw 0 0;
           padding: 0;
           list-style: none;
           display: flex;
@@ -215,24 +219,22 @@ header {
           justify-content: flex-end;
 
           li {
+            height: 50%;
             margin-left: 4vw;
             position: relative;
             display: flex;
             justify-content: center;
 
-            a {
+            .menu-items {
               display: block;
-              font-family: 'Montserrat', sans-serif;
+              @include roboto;
               font-size: 15px;
-              font-weight: bold;
+              font-weight: 600;
               line-height: 16px;
               color: #7f9883 ;
               text-decoration: none;
               text-align: center;
               
-              &:hover {                
-                color: #ac242a;
-              }
               &:active {
                 color: #0f5f1d;
               }
@@ -240,12 +242,21 @@ header {
                 display: none;
               }              
             }
+
+            .down-icon-green {
+              position: absolute;
+              width: 10px;
+              top: 100%;
+              left:40%;
+              opacity: .4;
+            }
             .ul-submenu {
               display: none;
             }
             &:hover {
+              color: #ac242a;
+
               .ul-submenu {
-                display: block;
                 position: absolute;
                 padding: 0;
                 list-style: none;
@@ -253,28 +264,40 @@ header {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+
                 .submenu {
                   width: 100%;
                   padding: 0;
                   margin: 0;
                   top: 30px;
                   display: flex;
-                  align-items: center;
+                  align-items: center;                  
+
                   a {
                     width: 100%;
-                    padding: 10px;
+                    padding: 10px 15px;
                     font-size: 0.95em;
-                    font-weight: 500;
-                    margin-top: 3px;                   background-color: #ffffff;
-                    box-shadow: 2px 2px 8px 0 #00000034;
-                    &:hover {                      
-                      font-weight: bold;
+                    font-weight: 600;
+                    color: #fff;
+                    margin-top: 3px;
+                    background-color: #7f9883;
+                    box-shadow: 3px 3px 3px #0000007e;
+                    animation: a-sub .5s;
+
+                    &:hover {
+                      color: #ac242a;
                       background-color: #f3f3f3;
                     }
                     &:active {
+                      color: #0f5f1d;
                       box-shadow: none;
                     }
-                  }
+
+                    @keyframes a-sub {
+                      0% {opacity: 0; transform: translateY(-20px);}
+                      100% {opacity: 1; transform: translateY(0);}
+                    }
+                  }                  
                 }
               }           
             }

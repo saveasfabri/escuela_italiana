@@ -1,17 +1,16 @@
-html {
-  height: 100%;
-}
+
 body {
-  height: 100vh;
+  border-bottom: solid 5px #ac242a;
 }
 /***************************** VIDEO - HOME_index *****************************/
+
+/* ----------- Mobile First ----------- */
 
 .section-video-home {
   position: relative;
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
-  border-bottom: solid 5px brown ;
 
   .container-video {
     position: relative;
@@ -20,24 +19,13 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
-    border-bottom: blue 2px solid;
-    
-    /* .blur-video {
-      position: absolute;
-      width: 100%;
-      height: 100%; 
-      opacity: .5;
-      background-color: black;
-      z-index: 10;
-    } */
 
     .video {
       position: absolute;
       height: 105%;
       left: -760px;
-      filter: contrast(110%);
+      filter: contrast(120%);
       z-index: -1;
-      border-bottom: solid 2px rgb(0, 255, 55);
     }
 
     .container-title {
@@ -45,7 +33,6 @@ body {
       width: 0%;
       height: 120px;
       margin-top: 180px;
-      /* background-color: #16381c9c; */
       background: linear-gradient(90deg,  rgba(22,56,28,0.05) 5%, rgba(22,56,28,.7) 100%);
       display: flex;
       justify-content: flex-end;
@@ -62,9 +49,8 @@ body {
         margin-right: 20px;
         text-align: right;
         left: 250px;
-        animation: title 1s 1;
-        animation-fill-mode: forwards;
-        animation-delay: 1.9s;
+        text-shadow: 3px 3px 3px #0000007e;
+        animation: title 1s 1 forwards 2s;
       }
     }
 
@@ -81,12 +67,101 @@ body {
       height: 100%;
       background-color: #df18228c;
       z-index: 2;
-    } 
+    }
+    
+    .down-icon-white {
+      position: absolute;
+      top: 95%;
+      left: 50%;
+      opacity: .9;
+      width: 20px;
+      animation: 3s down-icon-white infinite 2s;
+    }
+    @keyframes down-icon-white {
+      20%, 50% { transform: translateY(0px); }
+      30% { transform: translateY(10px); }
+      60% { transform: translateY(10px); }
+    }
   }
 }
-@media screen and (min-width: 800px) {
-  
+
+/* ----------- Media Query 400px ----------- */
+
+@media screen and (min-width: 400px) {
+  .video {
+    width: 100%;
+    object-fit:cover;
+    top: -28px;
+    left: 0;
+  }
 }
+
+/* ----------- Media Query 800px ----------- */
+
+@media screen and (min-width: 800px) {
+  .section-video-home {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+  
+    .container-video {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: block;
+  
+      .video {
+        position: absolute;
+        width: 100%;
+        object-fit:cover;
+        top: -28px;
+        left: 0;
+        filter: contrast(110%);
+        z-index: -1;
+      }
+  
+      .container-title {
+        position: unset;
+        width: 50%;
+        height: 100%;
+        margin-top: 0;
+        background: linear-gradient(90deg,  rgba(22,56,28,.7) 25%, rgba(22,56,28,0) 100%);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        opacity: 0;
+        animation: container-title 2s ease-out;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+  
+        .title {
+          position: absolute;
+          font-size: 100px;
+          @include frank;
+          color: #ffffff;
+          margin-top: 150px;
+          margin-left: 50px;
+          text-align: left;
+          left: 0px;
+        }
+      }
+      @keyframes container-title {
+        0% {opacity: 0; transform: translateX(-100px);}
+        100% {opacity: 1; transform: translateX(0);}
+      }
+        
+      .red-line-vertical {
+        display: none;
+      }
+
+    }
+  }
+}
+
+
+
+
 
 /************************** SECCION NUESTRA HISTORIA *****************************/
 
