@@ -16,9 +16,7 @@
     </title>
     <link rel="canonical" href="index.html">
     <link rel="icon" href="images/menu_img/menu_favicon-ICI.png">
-    <link rel="stylesheet" href="./styles/styles.css" media="screen">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700|Abril+Fatface:400">
+    <link rel="stylesheet" href="./styles/styles.css" media="screen">    
   </head>
 
   <body>    
@@ -37,6 +35,7 @@
             <span class="span2"></span>
             <span class="span3"></span>
           </label>
+
           <!-- menu mobile (no activo en descktop) -->
           <ul class="ul-menu-mobile" id="ul-menu-mobile">
             <li>
@@ -84,39 +83,41 @@
           <!-- menu descktop (no activo en mobile)-->
           <ul class="ul-menu-descktop">
             <li>
-              <a href="index.html" id="menu-modo" class="menu-items">
+              <a class="menu-items" href="index.html" id="menu-modo">
                 Home
               </a>
+              <img class="down-icon-green" src="/icons/down-icon-green.svg" alt="Ícono desplegar menu">
               <ul class="ul-submenu">
                 <li class="submenu">
-                  <a href="historia.html" id="menu-modo" class="menu-items">
+                  <a class="menu-items" href="historia.html" id="a-sub">
                     Historia
                   </a>
                 </li>            
               </ul>
             </li>            
             <li>            
-              <a href="propuesta.html" class="menu-items">
+              <a class="menu-items" href="propuesta.html">
                 Propuesta Educativa
               </a>
             </li>
             <li>            
               <a class="menu-items">
-                Informate
+                Informáte
               </a>
+              <img class="down-icon-green" src="/icons/down-icon-green.svg" alt="Ícono desplegar menu">
               <ul class="ul-submenu">
                 <li class="submenu">
-                  <a href="novedades.html" class="menu-items">
+                  <a class="menu-items" id="a-sub" href="novedades.html">
                     Novedades
                   </a>
                 </li>
                 <li class="submenu">
-                  <a href="documentacion.html" class="menu-items">
+                  <a class="menu-items" id="a-sub" href="documentacion.html">
                     Documentación
                   </a>
                 </li>
                 <li class="submenu">
-                  <a href="comedor.html" class="menu-items">
+                  <a class="menu-items" id="a-sub" href="comedor.html">
                     Comedor
                   </a>
                 </li>
@@ -124,13 +125,13 @@
             </li>
             
             <li>
-              <a href="https://moodle.escuelaitaliana.com/login/index.php" class="menu-items" target="_blank">
+              <a class="menu-items" href="https://moodle.escuelaitaliana.com/login/index.php" target="_blank">
                 Campus Virtual
               </a>
             </li>
 
             <li>
-              <a href="contacto.html" class="menu-items">
+              <a class="menu-items" href="contacto.html">
                 Contacto
               </a>
             </li>
@@ -293,24 +294,28 @@
 
     <!-- ***************************** VIDEO - HOME_index ***************************** -->
     <section class="section-video-home">
-      <div class="container-video">
-        <video loop="" muted="" autoplay="autoplay" playsinline="">
+      <div class="container-video" id="container-video">
+        
+        <video class="video" loop="" muted="" autoplay="autoplay" playsinline="">
           <source src="videos/frenteEscuela_index.mp4" type="video/mp4">
           <p>Your browser does not support HTML5 video.</p>
         </video>
+
+        <div class="container-title">
+          <h1 class="title">
+            125 años<br>
+            Educando
+          </h1>
+          <div class="red-line-vertical"></div>
+        </div>
+        <img class="down-icon-white" src="/icons/down-icon-white.svg" alt="Icono Bajar">
+          
+        </i>
       </div>
-      <div>
-        <h1 class="title">
-          125 años<br>
-          Educando
-        </h1>
-        <h3 class="subtitle">
-          INSTITUTO DE CULTURA ITÁLICA
-        </h3>
-      </div>
+      
     </section>
     <!-- ************************** SECCION NUESTRA HISTORIA ***************************** -->
-    <section class="u-clearfix u-custom-color-1 u-section-2" id="carousel_c610">
+    <!-- <section class="u-clearfix u-custom-color-1 u-section-2" id="carousel_c610">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -336,9 +341,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ***************************** SECCION OFERTA PEDAGOGICA ***************************** -->
-    <section class="u-clearfix u-custom-color-1 u-section-3" id="carousel_6bfe">
+    <!-- <section class="u-clearfix u-custom-color-1 u-section-3" id="carousel_6bfe">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-gutter-18 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -394,9 +399,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ***************************** SECCION ULTIMAS NOTICIAS ***************************** -->
-    <section class="u-clearfix u-white u-section-4" id="carousel_81ea">
+    <!-- <section class="u-clearfix u-white u-section-4" id="carousel_81ea">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -425,7 +430,7 @@
                   </div>
                   <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
                     <div class="u-container-layout">
-                      <!-- <img class="u-image u-image-1" src="images/index_img/index2_ultimasNoticias.png"> -->
+                      <img class="u-image u-image-1" src="images/index_img/index2_ultimasNoticias.png">
                     </div>
                   </div>
                 </div>
@@ -479,9 +484,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ********************* SECCION NIVELES/ESCUELA PARITARIA ********************** -->
-    <section class="u-clearfix u-section-5" id="carousel_5322">
+    <!-- <section class="u-clearfix u-section-5" id="carousel_5322">
       <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
         <div class="u-gutter-0 u-layout">
           <div class="u-layout-row">
@@ -533,9 +538,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ************************** SECCION NUESTROS EX ALUMNOS ************************** -->
-    <section class="seccion_exAlumnos">
+    <!-- <section class="seccion_exAlumnos">
       <div class="lineWhite_exAlumnos"></div>
       <div class="container-Main_exAlumos">
         <h2 class="title_exAlumnos">
@@ -561,10 +566,10 @@
           </div>
         </div>        
       </div>
-    </section>    
+    </section>  -->   
     
     <!-- ********************************** FOOTER ********************************** -->    
-    <footer class="u-clearfix u-custom-color-2 u-footer" id="sec-9433">
+    <!-- <footer class="u-clearfix u-custom-color-2 u-footer" id="sec-9433">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
           <a class="u-social-url" target="_blank" href="https://facebook.com/escuelaitalianaici">
@@ -595,7 +600,7 @@
           </a>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script> -->

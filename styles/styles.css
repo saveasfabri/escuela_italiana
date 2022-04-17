@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&diaplay=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700|Abril+Fatface:40");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,400;1,600;1,800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap");
 /************************ Font Family *************************/
 /************************ Font Color *************************/
 /* MAIN COLORS */
@@ -7,14 +6,23 @@
 /********************* Background Color **********************/
 /********************* Box-Shadow **********************/
 /********************* Line-Heig **********************/
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&diaplay=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700|Abril+Fatface:40");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,400;1,600;1,800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap");
+/************************ Font Family *************************/
+/************************ Font Color *************************/
+/* MAIN COLORS */
+/* HOVER */
+/********************* Background Color **********************/
+/********************* Box-Shadow **********************/
+/********************* Line-Heig **********************/
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,400;1,600;1,800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap");
 header {
+  position: absolute;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.075);
           box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.075);
+  background-color: rgba(255, 255, 255, 0.973);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,6 +30,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 100;
   /* End .container-logo-nav MOBILE */
 }
 
@@ -33,7 +42,6 @@ header .green-line {
 header .container-logo-nav {
   width: 100%;
   height: 90px;
-  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,8 +55,9 @@ header .container-logo-nav {
 }
 
 header .container-logo-nav .logo {
-  width: 80%;
+  width: 70%;
   height: 100%;
+  margin-left: 20px;
   -o-object-fit: cover;
      object-fit: cover;
   display: -webkit-box;
@@ -69,6 +78,7 @@ header .container-logo-nav .logo .img-logo {
 header .container-logo-nav nav {
   width: 10%;
   height: 100%;
+  margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,11 +94,11 @@ header .container-logo-nav nav {
 
 header .container-logo-nav nav .ul-menu-mobile {
   position: absolute;
+  width: 0px;
+  height: 100vh;
   border-top: #ac242a solid 5px;
   top: 95px;
   right: 0px;
-  width: 0px;
-  height: 3000px;
   padding-left: 0px;
   padding-top: 32px;
   margin: 0;
@@ -107,7 +117,7 @@ header .container-logo-nav nav .ul-menu-mobile li {
 header .container-logo-nav nav .ul-menu-mobile li .menu-items {
   display: block;
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 30px;
@@ -208,11 +218,37 @@ header .container-logo-nav nav .ul-menu-descktop {
   display: none;
 }
 
-/* ************************************** MEDIA QUERY 1024 ************************************** */
+.header-enabled {
+  -webkit-box-shadow: 0 2px 4px 1px #9CAFC350;
+          box-shadow: 0 2px 4px 1px #9CAFC350;
+  -webkit-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+  opacity: 1;
+}
+
+.header-off {
+  -webkit-transition: opacity .3s ease-in;
+  transition: opacity .3s ease-in;
+  opacity: 0;
+}
+
+.header-off:hover {
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  opacity: 1;
+}
+
+.header-shadow-off {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* ************************************ MEDIA QUERY 800 ************************************** */
 @media screen and (min-width: 800px) {
   header {
     position: fixed;
     width: 100%;
+    max-height: 80px;
     background-color: #ffffff;
     z-index: 100;
     /* End .container-logo-nav DESCKTOP*/
@@ -234,12 +270,14 @@ header .container-logo-nav nav .ul-menu-descktop {
   }
   header .container-logo-nav nav {
     width: 70%;
+    margin: 0;
     /* End .ul-menu-descktop*/
   }
   header .container-logo-nav nav .ul-menu-descktop {
     display: block;
     width: 100%;
-    margin-right: 5vw;
+    height: 60%;
+    margin: 0 5vw 0 0;
     padding: 0;
     list-style: none;
     display: -webkit-box;
@@ -253,6 +291,7 @@ header .container-logo-nav nav .ul-menu-descktop {
             justify-content: flex-end;
   }
   header .container-logo-nav nav .ul-menu-descktop li {
+    height: 50%;
     margin-left: 4vw;
     position: relative;
     display: -webkit-box;
@@ -262,30 +301,36 @@ header .container-logo-nav nav .ul-menu-descktop {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  header .container-logo-nav nav .ul-menu-descktop li a {
+  header .container-logo-nav nav .ul-menu-descktop li .menu-items {
     display: block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 16px;
     color: #7f9883;
     text-decoration: none;
     text-align: center;
   }
-  header .container-logo-nav nav .ul-menu-descktop li a:hover {
-    color: #ac242a;
-  }
-  header .container-logo-nav nav .ul-menu-descktop li a:active {
+  header .container-logo-nav nav .ul-menu-descktop li .menu-items:active {
     color: #0f5f1d;
   }
-  header .container-logo-nav nav .ul-menu-descktop li a::after {
+  header .container-logo-nav nav .ul-menu-descktop li .menu-items::after {
     display: none;
+  }
+  header .container-logo-nav nav .ul-menu-descktop li .down-icon-green {
+    position: absolute;
+    width: 10px;
+    top: 100%;
+    left: 40%;
+    opacity: .4;
   }
   header .container-logo-nav nav .ul-menu-descktop li .ul-submenu {
     display: none;
   }
+  header .container-logo-nav nav .ul-menu-descktop li:hover {
+    color: #ac242a;
+  }
   header .container-logo-nav nav .ul-menu-descktop li:hover .ul-submenu {
-    display: block;
     position: absolute;
     padding: 0;
     list-style: none;
@@ -317,21 +362,49 @@ header .container-logo-nav nav .ul-menu-descktop {
   }
   header .container-logo-nav nav .ul-menu-descktop li:hover .ul-submenu .submenu a {
     width: 100%;
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 0.95em;
-    font-weight: 500;
+    font-weight: 600;
+    color: #fff;
     margin-top: 3px;
-    background-color: #ffffff;
-    -webkit-box-shadow: 2px 2px 8px 0 #00000034;
-            box-shadow: 2px 2px 8px 0 #00000034;
+    background-color: #7f9883;
+    -webkit-box-shadow: 3px 3px 3px #0000007e;
+            box-shadow: 3px 3px 3px #0000007e;
+    -webkit-animation: a-sub .5s;
+            animation: a-sub .5s;
   }
   header .container-logo-nav nav .ul-menu-descktop li:hover .ul-submenu .submenu a:hover {
-    font-weight: bold;
+    color: #ac242a;
     background-color: #f3f3f3;
   }
   header .container-logo-nav nav .ul-menu-descktop li:hover .ul-submenu .submenu a:active {
+    color: #0f5f1d;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  @-webkit-keyframes a-sub {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes a-sub {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
   }
   header .container-logo-nav nav .ul-menu-mobile {
     display: none;
@@ -344,32 +417,6 @@ header .container-logo-nav nav .ul-menu-descktop {
   }
 }
 
-.header-enabled {
-  -webkit-box-shadow: 0 2px 4px 1px #9CAFC350;
-          box-shadow: 0 2px 4px 1px #9CAFC350;
-  -webkit-transition: opacity .5s ease-in;
-  transition: opacity .5s ease-in;
-  opacity: 1;
-}
-
-.header-off {
-  -webkit-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
-  opacity: 0;
-}
-
-.header-off:hover {
-  -webkit-transition: opacity .5s ease;
-  transition: opacity .5s ease;
-  opacity: 1;
-}
-
-.header-shadow-off {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-/* ************************************** MEDIA QUERY 1440 ************************************** */
 /************************ Font Family *************************/
 /************************ Font Color *************************/
 /* MAIN COLORS */
@@ -871,12 +918,251 @@ template {
   display: none;
 }
 
-* {
+body {
+  border-bottom: solid 5px #ac242a;
+}
+
+/***************************** VIDEO - HOME_index *****************************/
+/* ----------- Mobile First ----------- */
+.section-video-home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/***************************** VIDEO - HOME_index *****************************/
+.section-video-home .container-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section-video-home .container-video .video {
+  position: absolute;
+  height: 105%;
+  left: -760px;
+  -webkit-filter: contrast(120%);
+          filter: contrast(120%);
+  z-index: -1;
+}
+
+.section-video-home .container-video .container-title {
+  position: absolute;
+  width: 0%;
+  height: 120px;
+  margin-top: 180px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%, rgba(22, 56, 28, 0.05)), to(rgba(22, 56, 28, 0.7)));
+  background: linear-gradient(90deg, rgba(22, 56, 28, 0.05) 5%, rgba(22, 56, 28, 0.7) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: container-title 2s 1;
+          animation: container-title 2s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.section-video-home .container-video .container-title .title {
+  position: relative;
+  font-size: 50px;
+  font-family: 'Frank Ruhl Libre', serif;
+  color: #ffffff;
+  margin-right: 20px;
+  text-align: right;
+  left: 250px;
+  text-shadow: 3px 3px 3px #0000007e;
+  -webkit-animation: title 1s 1 forwards 2s;
+          animation: title 1s 1 forwards 2s;
+}
+
+@-webkit-keyframes container-title {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes container-title {
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes title {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes title {
+  100% {
+    left: 0;
+  }
+}
+
+.section-video-home .container-video .red-line-vertical {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-color: #df18228c;
+  z-index: 2;
+}
+
+.section-video-home .container-video .down-icon-white {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  opacity: .9;
+  width: 20px;
+  -webkit-animation: 3s down-icon-white infinite 2s;
+          animation: 3s down-icon-white infinite 2s;
+}
+
+@-webkit-keyframes down-icon-white {
+  20%, 50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  30% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  60% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes down-icon-white {
+  20%, 50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  30% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  60% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+/* ----------- Media Query 400px ----------- */
+@media screen and (min-width: 400px) {
+  .video {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: -28px;
+    left: 0;
+  }
+}
+
+/* ----------- Media Query 800px ----------- */
+@media screen and (min-width: 800px) {
+  .section-video-home {
+    position: relative;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .section-video-home .container-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+  }
+  .section-video-home .container-video .video {
+    position: absolute;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: -28px;
+    left: 0;
+    -webkit-filter: contrast(110%);
+            filter: contrast(110%);
+    z-index: -1;
+  }
+  .section-video-home .container-video .container-title {
+    position: unset;
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(22, 56, 28, 0.7)), to(rgba(22, 56, 28, 0)));
+    background: linear-gradient(90deg, rgba(22, 56, 28, 0.7) 25%, rgba(22, 56, 28, 0) 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    opacity: 0;
+    -webkit-animation: container-title 2s ease-out;
+            animation: container-title 2s ease-out;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .section-video-home .container-video .container-title .title {
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #ffffff;
+    margin-top: 150px;
+    margin-left: 50px;
+    text-align: left;
+    left: 0px;
+  }
+  @-webkit-keyframes container-title {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes container-title {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  .section-video-home .container-video .red-line-vertical {
+    display: none;
+  }
+}
+
 /************************** SECCION NUESTRA HISTORIA *****************************/
 /***************************** SECCION OFERTA PEDAGOGICA *****************************/
 /***************************** SECCION ULTIMAS NOTICIAS *****************************/
@@ -888,6 +1174,11 @@ template {
 @import "./pages/historia";
 @import "./pages/novedades";
 @import "./pages/propuesta"; */
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
 p, li, h5 {
   line-height: 1.6rem;
 }
