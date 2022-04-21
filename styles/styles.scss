@@ -2,7 +2,7 @@
 @import "./general/variables";
 @import "./general/menu";
 @import "./general/btns";
-@import "./general/reset";
+/* @import "./general/reset"; */
 
 @import "./pages/index";
 /* @import "./pages/comedor";
@@ -13,8 +13,11 @@
 @import "./pages/propuesta"; */
 
 * {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    text-decoration: none
+    text-decoration: none;
+    box-sizing: border-box
 }
 p, li, h5 {
     @include line-heig;

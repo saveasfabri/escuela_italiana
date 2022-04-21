@@ -12,7 +12,8 @@
 @mixin color-withe{color: #ffffff};
 @mixin color-black{color: #000000};
 @mixin color-red{color: #ac242a};
-@mixin color-green-hard{color: #16381c};
+@mixin color-green{color: #16381c};
+@mixin color-green-hard{color: #032e0b};
 @mixin color-green-soft{color: #0f5f1d};
 @mixin color-grey {color: #7f9883};
 
@@ -25,6 +26,13 @@
 
 
 /********************* Background Color **********************/
+
+@mixin background-gradient-white {
+    background: linear-gradient(-45deg, rgba(207,207,207,1) 0%, rgba(255,255,255,1) 100%);
+}
+@mixin background-gradient-green {
+    background: linear-gradient(135deg, rgba(22,56,28,1) 0%, rgba(15,95,29,1) 100%);
+}
 
 @mixin background-white {background-color: #ffffff};
 
@@ -43,7 +51,7 @@
 
 /********************* Box-Shadow **********************/
 
-@mixin shadow {box-shadow: 8px 8px 6px #1f1f1fd8};
+@mixin shadow {box-shadow: 4px 4px 7px #00000086};
 
 /********************* Line-Heig **********************/
 
