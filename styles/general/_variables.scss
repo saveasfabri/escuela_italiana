@@ -11,7 +11,7 @@
 /* MAIN COLORS */
 @mixin color-withe{color: #ffffff};
 @mixin color-black{color: #000000};
-@mixin color-red{color: #ac242a};
+@mixin color-red{color: #bb212bcc};
 @mixin color-green{color: #16381c};
 @mixin color-green-hard{color: #032e0b};
 @mixin color-green-soft{color: #0f5f1d};
@@ -41,6 +41,8 @@
 @mixin background-green-intermediate {background-color: #16381c};
 
 @mixin background-green-soft {background-color: #7f9883};
+
+@mixin background-red {background-color:  #bb212bcc};
 
 @mixin background-grey_container{background-color:  #ffffff15};
 
