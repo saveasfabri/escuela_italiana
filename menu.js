@@ -13,21 +13,19 @@ window.onscroll = () => {
   ubicacionPrincipal = Desplazamiento_Actual;
 }
 
+/* Text Animation */
 
-/* OPCION DE MENU 2 */
+window.addEventListener('scroll', function()  {
+  let elements = document.getElementsByClassName('scroll-content');
+  let screenSize = window.innerHeight;
+  
+    for(var i = 0; i < elements.length; i++) {
+      let element = elements[i];
 
-/* let time; 
-
-function desplaza() {
-    clearTimeout(time); 
-    time = setTimeout(oculta, 1500); 
-    document.querySelector("header").className = "u-clearfix u-header u-header header-enabled";       
-}
-
-function oculta() {
-    if((document.documentElement.scrollTop || self.pageYOffset) != 0) {
-        document.querySelector("header").className = "u-clearfix u-header u-header header-off";         
-    }    
-}
-onscroll = desplaza;0
- */
+      if(element.getBoundingClientRect().top < screenSize) {
+        element.classList.add('visible');
+      } else {
+        element.classList.remove('visible');
+      }
+    }
+});

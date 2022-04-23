@@ -1,3 +1,27 @@
+/* .cont-ttb {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: cont-ttb 1s ease-in-out;
+    
+    @keyframes cont-ttb {
+    0% {
+        transform: translateX(-15%);
+        opacity: 0;
+    }        
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }	
+  } 
+
+}
+EJEMPLO DE ANIMACION
+*/
+
+
+
 /************************************ SECCION HISTORIA ************************************/
 
 /********************* 125 AÑOS *********************/

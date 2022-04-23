@@ -270,9 +270,11 @@ html {
         width: 40%;
         height: 85vh;
       }
+
       .cont-ttb {
         width: 60%;
         height: 85vh;
+        animation: cont-ttb 1s ease-in-out;
 
         .s-cont-tt {
 
@@ -368,11 +370,32 @@ html {
   }
 }
 
-
+/* Animation */
+.fadeLeft {
+  transform: translateX(-10%);
+  opacity: 0;
+  transition: all 1s ease-in-out .5s;
+}
+.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
 
 /***************************** SECCION OFERTA PEDAGOGICA *****************************/
 
 /* ........... Media Query 400px ........... */
+
+.section-oP {
+  width: 100%;
+  height: 100%;
+
+  .main-container {
+    width: 100%;
+    height: 100%;
+
+    
+  }
+}
 @media screen and (min-width: 400px) {
   
 }
