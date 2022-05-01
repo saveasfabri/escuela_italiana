@@ -15,7 +15,7 @@
       INSTITUTO DE CULTURA ITALICA
     </title>
     <link rel="canonical" href="index.html">
-    <link rel="icon" href="images/menu_img/isotipo-ici.svg">
+    <link rel="icon" href="images/menu_img/isotipo-ici.svg" type="image/svg">
     <link rel="stylesheet" href="./styles/styles.css" media="screen">    
   </head>
 </script>
@@ -33,6 +33,8 @@
         </a>
 
         <nav>
+
+          <!-- burger menu mobile (no activo en descktop) -->
           <input type="checkbox" id="checkbox" />
           <label for="checkbox" id="burger-icon">
             <span class="span1"></span>
@@ -100,7 +102,7 @@
               </ul>
             </li>            
             <li>            
-              <a class="menu-items" href="propuesta.html">
+              <a class="menu-items cent" href="propuesta.html">
                 Propuesta Educativa
               </a>
             </li>
@@ -128,7 +130,7 @@
               </ul>
             </li>            
             <li>
-              <a class="menu-items" id="menu-items" href="https://moodle.escuelaitaliana.com/login/index.php" target="_blank">
+              <a class="menu-items cent" id="menu-items" href="https://moodle.escuelaitaliana.com/login/index.php" target="_blank">
                 Campus Virtual
               </a>
             </li>
@@ -174,21 +176,23 @@
     
     <div id="destination-link"></div>
 
-    <section class="section-nh">
+    <section class="section-nH">
 
-      <div class="main-container">
+      <div class="main-container-nH">
 
-        <div class="img-nh"></div>
-
+        <div class="img-cont">
+          <img class="img-nH img-grid" src="/images/index_img/index1_nuestraHistoria.JPG" alt="Imagen d estatua">
+        </div>
+        
         <div class="cont-ttb scroll-content fadeLeft" id="cont-ttb">
           
           <div class="s-cont-tt">
             
-            <h2 class="title-nh">
+            <h2 class="title-nH">
               Nuestra <br>
-              <span class="span-hstoria">Historia</span>
+              <span class="span-title">Historia</span>
             </h2>
-            <p class="text-nh">
+            <p class="text-nH">
               El nacimiento de esta Institución respondió a necesidades surgidas de un momento histórico en el que muchas familias italianas llegaban inmediatamente después de la fundación de la ciudad de La Plata. La nueva capital de la Prov. de Bs. As. reclamaba mano de obra para su construcción; por ello fue meta de una gran cantidad de inmigrantes italianos que desembarcaron con expectativas de un porvenir mejor, que el ofrecido en su tierra natal. Junto a su trabajo, aquellos italianos desarrollaron una actividad cultural y social que los indujo a formar Instituciones de socorros mutuos y culturales que reunían a los obreros en defensa de sus derechos y principios sociales.
             </p>
 
@@ -200,101 +204,117 @@
             </a>
           </div>
         </div> <!-- End cont-ttb -->
-      </div> <!-- End main-container -->
+      </div> <!-- End main-container-nH -->
     </section>
 
     <!-- ***************************** SECCION OFERTA PEDAGOGICA ***************************** -->
     
     <section class="section-oP">
 
-      <div class="main-container">
+      <div class="main-container-oP">
+
+        <h2 class="title-oP">
+          Oferta <br> 
+          <span class="span-title">
+            Pedagógica
+          </span>
+        </h2>
         
-        <div class="cont-tT-oP">
-        
-          <h2 class="title-oP">
-            Oferta Pedagógica
-          </h2>
+        <div class="cont-tb-oP">  
           
           <p class="text-oP">
             El objetivo de este proyecto es el lograr que nuestros alumnos, a través de la propuesta de formación bilingüe y bicultural que el Instituto ofrece, puedan reconocerse como “Ciudadanos del mundo”, sin dejar de lado su identidad nacional.
           </p>
-        </div>
-        <div class="cont-implica">
-          <h3 class="title-implica">
-            Esto implica:
-          </h3>
-          <p class="text-implica">
-            Generar experiencias de integración e intercambio.<br>
 
-            Definir los conocimientos que circulan en cada contexto intercultural en términos escolares. <br>
-            
-            Valorar la interacción con otros diferentes como productora de aprendizajes.<br>
-
-            Reconocer los saberes que posee cada sujeto como instrumento y producto del vínculo con los otros.<br>
-          </p>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- <section class="u-clearfix u-custom-color-1 u-section-3" id="carousel_6bfe">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-18 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-col">
-              <div class="u-size-30">
-                <div class="u-layout-row">
-                  <div class="u-container-style u-layout-cell u-left-cell u-right-cell u-size-60 u-layout-cell-1">
-                    <div class="u-container-layout u-valign-middle u-container-layout-1">
-                      <h2 class="u-custom-font u-text u-text-1">
-                        Oferta Pedagógica
-                      </h2>
-                      <div class="u-border-3 u-border-white u-line u-line-horizontal u-line-1"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="u-size-30">
-                <div class="u-layout-row">
-                  <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-2">
-                    <div class="u-container-layout">
-                      <p class="u-text u-text-2">
-                        El objetivo de este proyecto es el lograr que nuestros alumnos, a través de la propuesta de formación bilingüe y bicultural que el Instituto ofrece, puedan reconocerse como “Ciudadanos del mundo”, sin dejar de lado su identidad nacional.&nbsp;
-                      </p>
-                      <a href="propuesta.html" class="btn-white_seccOfertaPed-2 btn-white">
-                        Conocé nuestro proyecto
-                      </a>
-                    </div>
-                  </div>
-                  <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-3">
-                    <div class="u-container-layout">
-                      <div class="u-background-white"></div>
-                      <h4 class="u-custom-font u-text u-text-font u-text-3">
-                        ESTO IMPLICA
-                      </h4>
-                      <ul class="u-text u-text-4">
-                        <li>
-                          Generar experiencias de integración e intercambio.<br>
-                        </li>
-                        <li>
-                          Definir los conocimientos que circulan en cada contexto intercultural en términos escolares.<br>
-                        </li>
-                        <li>
-                          Valorar la interacción con otros diferentes como productora de aprendizajes.</li>
-                        <li>
-                          Reconocer los saberes que posee cada sujeto como instrumento y producto del vínculo con los otros.<br>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="cont-btn-oP btn-onOff-1">
+            <a class="btn white" href="/propuesta.html">
+              Conocé nuestro proyecto
+            </a>
           </div>
         </div>
-      </div>
-    </section> -->
+
+        <div class="implBtn-cont">
+
+          <div class="cont-implica">
+
+            <img class="blackboard" src="/images/index_img/index2b_ultimasNoticias.jpg" alt="Imagen de fondo de pizarrón">
+
+            <h3 class="title-implica">
+              Esto implica:
+            </h3>
+
+            <p class="text-implica">
+              &#10004 Generar experiencias de integración e intercambio.
+            </p>
+            <p class="text-implica">
+              &#10004 Definir los conocimientos que circulan en cada contexto intercultural en términos escolares.
+            </p>
+            <p class="text-implica">
+              &#10004 Valorar la interacción con otros diferentes como productora de aprendizajes.
+            </p>
+            <p class="text-implica">
+              &#10004 Reconocer los saberes que posee cada sujeto como instrumento y producto del vínculo con los otros.
+            </p>
+          </div>
+          
+          <div class="cont-btn-oP btn-onOff-2">
+            <a class="btn white btn-whiteboard" href="/propuesta.html">
+              Conocé nuestro proyecto
+            </a>
+          </div>
+        </div> <!-- End implBtn-cont -->
+      </div> <!-- End main-container-oP -->
+    </section>
+
+    
     <!-- ***************************** SECCION ULTIMAS NOTICIAS ***************************** -->
+    <section class="section-uN">
+      
+      <div class="main-container-uN">
+
+        <div class="tb-cont-uN">
+
+          <div class="bg-red"></div>
+
+          <p class="text-22">
+            '22
+          </p>
+
+          <h2 class="Title-uN">
+            Últimas Noticias
+          </h2>
+
+          <p class="text-uN">
+            Comenzamos el CICLO LECTIVO 2022.<br>
+            Con todas las medidas de seguridad y prevención, cumpliendo los protocolos provinciales.<br>
+            Les garantizamos la continuidad pedagógica presencial diaria de cada alumno/a.
+          </p>
+
+          <div class="cont-btn-uN">
+            <a class="btn green" href="/novedades.html">
+              Ver novedades
+            </a>
+          </div>
+
+        </div>
+        <div class="img-cont-uN">
+          <picture>
+            <source 
+            srcset="/images/index_img/index3_uN-1200px.jpg" media="(min-width: 1200px)">
+
+            <source 
+            srcset="/images/index_img/index3_uN-800px.jpg" media="(min-width: 800px)">
+
+            <source 
+            srcset="/images/index_img/index3_uN-500px.jpg" media="(min-width: 500px)">
+
+            <img src="/images/index_img/index3_uN-500px.jpg" alt="Imagen de maestras con barbijo">
+          </picture>
+        </div>
+      </div>      
+    </section>
+
+
     <!-- <section class="u-clearfix u-white u-section-4" id="carousel_81ea">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">

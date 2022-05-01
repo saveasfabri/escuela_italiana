@@ -1,17 +1,8 @@
 
-html {
-  width: 100%;
-  height: 100%;
-  body {
-    width: 100%;
-    border-bottom: solid 5px #ac242a;
-  }
-}
 
 /***************************** VIDEO - HOME_index *****************************/
 
-/* ................. Mobile ................. */
-
+/* ............ Mobile - video ........... */
 .section-video-home {
   position: relative;
   width: 100%;
@@ -49,7 +40,7 @@ html {
 
       .title {
         position: relative;
-        font-size: 50px;
+        font-size: 3em;
         @include frank;
         color: #ffffff;
         margin-right: 20px;
@@ -98,8 +89,8 @@ html {
   }
 }
 
-/* ........... Media Query 400px ........... */
-
+/* ........ Media Query 400px ........ */
+/* .............. video .............. */
 @media screen and (min-width: 400px) {
   .section-video-home {
     width: 100%;
@@ -117,8 +108,8 @@ html {
   }
 }
 
-/* ........... Media Query 800px ........... */
-
+/* ....... Media Query 800px ......... */
+/* .............. video .............. */
 @media screen and (min-width: 800px) {
   .section-video-home {
     position: relative;
@@ -169,66 +160,72 @@ html {
 }
 
 
-
 /************************** SECCION NUESTRA HISTORIA *****************************/
 
-/* ................. Mobile ................. */
-.section-nh {
+/* ........... Mobile ............. */
+/* ............. nH ............... */
+.section-nH {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 30px;
   margin-top: 20px;
 
-  .main-container {
-    width: 100%;
-    height: 100%;
+  .main-container-nH {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "img-cont cont-ttb";
 
-    .img-nh {
-      width: 100%;
-      height: 50vh;
-      background-image: url(/images/index_img/index1_nuestraHistoria.JPG);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
+    .img-cont {
+      grid-area: img-cont;
       @include shadow;
+      
+      .img-nH {
+        width: 100%;
+        height: 100%;
+      }
     }
+
     .cont-ttb {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      grid-area: cont-ttb;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 15vh;
+      grid-template-areas:
+      "s-cont-tt"
+      "btn-cont";
+      margin-top: 30px;
 
       .s-cont-tt {
+        grid-area: s-cont-tt;
         height: 100%;
 
-        .title-nh {
+        .title-nH {
           @include frank;
           font-size: 1.8em;
-          margin-top: 30px;
           line-height: 1.5em;
           @include color-green-soft;
-          .span-hstoria {
-            font-size: 2.8em;
+          .span-title {
+            font-size: 2.3em;
           }
         }
 
-        .text-nh {
+        .text-nH {
           @include frank;
           @include color-green-hard;
-          font-size: 1.1em;
           line-height: 1.9em;
           letter-spacing: .03em;
-          margin-top: 30px;
+          margin-top: 20px;
         }
 
       }
 
       .btn-cont {
         width: 100%;
-        height: 15vh;
-        margin-bottom: 20px;
         display: flex;
         align-items: flex-end;
+        grid-area: btn-cont;
 
         .btn {
           width: 60%;
@@ -238,17 +235,34 @@ html {
   }
 }
 
-/* ........... Media Query 400px ........... */
+/* ........ Media Query 400px ........ */
+/* ............. nH ............... */
 @media screen and (min-width: 400px) {
-  .section-nh {
+  .section-nH {
     padding: 7vh 5vw;
     
-    .main-container {  
+    .main-container-nH { 
+      
+      .img-cont {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+        box-shadow:none;
+
+        .img-nH {
+          height: unset;
+          position: absolute;
+          @include shadow;
+          
+        }
+      }
+
       .cont-ttb { 
         .btn-cont {
 
           .btn {
-            width: 40%;
+            width: auto;
           }
         }
       }
@@ -256,114 +270,116 @@ html {
   }
 }
 
-/* ........... Media Query 800px ........... */
+/* ........ Media Query 600px ........ */
+/* ............. nH ............... */
+@media screen and (min-width: 600px) {
+  .section-nH {
+    .main-container-nH { 
+      .img-cont {
+
+        .img-nH {
+          width: 110%;
+          top: -20%;
+        }
+      }
+    }
+  }
+}
+/* ........ Media Query 800px ........ */
+/* ............. nH ............... */
 @media screen and (min-width: 800px) {
-  .section-nh {
-    padding: 7.1vh 5vw;
+  .section-nH {
     margin-top: 0;
 
-    .main-container {  
-      display: flex;
-      column-gap: 5vw;
+    .main-container-nH {  
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto;
+      gap: 0 4vw;
 
-      .img-nh {
-        width: 40%;
-        height: 85vh;
+      .img-cont { 
+        width: 100%;
+        height: 100%;
+
+        .img-nH {
+          width: auto;
+          height: inherit;
+          top: 0;
+          left: -30px;
+        }
       }
 
       .cont-ttb {
-        width: 60%;
-        height: 85vh;
+        margin-top: 0;
         animation: cont-ttb 1s ease-in-out;
 
         .s-cont-tt {
 
-          .title-nh {
+          .title-nH {
             font-size: 1.8em;
-            margin-top: 0;
-
-            .span-hstoria {
-              font-size: 2.2em;
-            }
+            margin-top: 0; 
           }
-          .text-nh {
-            font-size: 1.1em;
+
+          .text-nH {
+            margin-top: 20px;
             line-height: 1.5em;
-            margin-top: 15px;
           }
         }
 
         .btn-cont {
-          justify-self:flex-end;
           margin-bottom: 0;
-        }
-      }
-    }
-  }
-}
-
-/* ........... Media Query 1400px ........... */
-@media screen and (min-width: 1400px) {
-  .section-nh {
-    padding: 5vh 3vw;
-
-    .main-container {  
-
-      .cont-ttb {
-
-        .s-cont-tt {
-
-          .title-nh {
-            font-size: 1.9em;
-
-            .span-hstoria {
-              font-size: 2.5em;
-            }
-          }
-          .text-nh {
-            font-size: 1.4em;
-            line-height: 2em;
-            margin-top: 40px;
-          }
-        }
-      }
-    }
-  }
-}
-
-/* ........... Media Query 2000px ........... */
-@media screen and (min-width: 2000px) {
-  .section-nh {
-
-    .main-container {  
-
-      .cont-ttb {
-
-        .s-cont-tt {
-
-          .title-nh {
-            font-size: 3.2em;
-            line-height: 2em;
-
-            .span-hstoria {
-              font-size: 3.5em;
-            }
-          }
-          .text-nh {
-            font-size: 1.8em;
-            line-height: 2.5em;
-            margin-top: 50px;
-          }
-        }
-
-        .btn-cont {
-          justify-self:flex-end;
-          margin-bottom: 0;
+          width: 40%;
 
           .btn {
-            font-size: 1.3em;
-            width: 40%;
-          }  
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ....... Media Query 1400px ....... */
+/* ............. nH ............... */
+@media screen and (min-width: 1400px) {
+  .section-nH {
+    padding: 5vh 3vw;
+    margin-top: 0;
+
+    .main-container-nH {  
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto;
+      gap: 0 4vw;
+
+      .img-cont { 
+        width: 100%;
+
+        .img-nH {
+          width: 100%;
+          height: auto;
+          top: 0;
+        }
+      }
+
+      .cont-ttb {
+        margin-top: 0;
+        animation: cont-ttb 1s ease-in-out;
+
+        .s-cont-tt {
+
+          .title-nH {
+            font-size: 1.8em;
+            margin-top: 0; 
+          }
+
+          .text-nH {
+            margin-top: 20px;
+            line-height: 1.5em;
+          }
+        }
+
+        .btn-cont {
+          width: 30%;
+          margin-bottom: 0;          
         }
       }
     }
@@ -381,41 +397,374 @@ html {
   opacity: 1;
 }
 
+
 /***************************** SECCION OFERTA PEDAGOGICA *****************************/
 
-/* ........... Media Query 400px ........... */
-
+/* ......... Mobile ......... */
+/* ........... oP ........... */
 .section-oP {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  @include background-gradient-green;
+  clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%);
+
+  .main-container-oP {    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title-op"
+      "cont-tb-op"
+      "implbtn-cont";
+    padding: 90px 25px 70px 25px;
+
+    .title-oP {
+      @include montserrat;
+      @include color-withe;
+      letter-spacing: .03px;
+      line-height: 1.5em;
+      text-shadow: 2px 2px 2px #000000;
+      grid-area: title-op;
+    }
+
+    .cont-tb-oP {
+      grid-area: cont-tb-op;
+
+      .text-oP {
+        @include montserrat;
+        @include color-withe;
+        line-height: 2em;
+        margin-top: 40px;
+      }
+
+      /* btn-onOff-1 off / btn-onOff-2 on */
+      .btn-onOff-1 {
+        display: none;
+      }
+    }
+
+    .implBtn-cont {
+      grid-area: implbtn-cont;
+
+      .cont-implica {
+        width: 100%;
+        margin-top: 50px;
+        border-left: #bb212bcc solid 7px;
+        padding: 20px 0 20px 20px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(15, 95, 30, 0) 100%);
+
+        .blackboard {
+          display: none
+        }
+
+        .title-implica {
+          @include roboto;
+          @include color-withe;
+          font-size: 1.5em;
+          letter-spacing: 0.1em;          
+        }
+
+        .text-implica {
+          @include roboto;
+          @include color-withe;
+          line-height: 2.1em;
+          margin-top: 20px;
+          
+        }
+      }
+      /* btn-onOff-1 off / btn-onOff-2 on */
+      .btn-onOff-2 {
+        display: block;
+      }
+
+      .cont-btn-oP {
+        width: 100%;
+        height: 12vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        
+        .btn {        
+          font-weight: 600;
+        }
+      }
+    }
+  } /* End .main-container-oP */
+} /* End section-oP */
+
+/* ......... Media Query 400px ......... */
+/* ................ oP ................. */
+@media screen and (min-width: 400px) {
+  .section-oP {   
+    
+    .main-container-oP {
+      padding: 10vh 5vw;
+
+      .title-oP {
+        letter-spacing: .2em;
+      }
+
+      .implBtn-cont {
+
+        .cont-implica {
+          width: 95%;
+          margin-top: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .title-implica {
+            @include montserrat;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            margin-bottom: 5px
+          }
+          
+          .text-implica {
+            @include pongolin;
+            width: 100%;
+            padding: 0 0 0 5vw;
+            margin-top: 20px;
+            line-height: 1.5em;
+            
+          }
+        }
+
+        .cont-btn-oP {
+          height: 15vh;
+          justify-content: start;
+        }
+      }/* End .implBtn-cont */
+    }/* End .main-container-oP */
+  } /* End section-oP */
+}
+
+/* ......... Media Query 800px ......... */
+/* ................ oP ................. */
+@media screen and (min-width: 800px) {
+  .section-oP {
+
+    .main-container-oP {
+      padding: 90px 5vw 130px 5vw;
+
+      .title-oP {
+        line-height: 1.5em;
+        letter-spacing: .2em;
+      }
+
+      .cont-tb-oP {
+        padding-bottom: 6vh;
+        
+        .text-oP {
+          line-height: 2.2em;
+        }
+      }
+      
+      .implBtn-cont {
+        padding-top: 8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .cont-implica {
+          position: relative;
+          width: 100%;
+          padding: 0;
+          margin-top: 0;
+          border-left: none;
+          background: none;
+          align-items: center;
+
+          .blackboard {
+            display: block;
+            position: absolute;
+            width: 100%;
+            max-width: 700px;
+            margin-top: 70px;
+            z-index: -1;
+          }
+
+          .title-implica {
+            @include pongolin;
+            font-size: 1.9em;
+            letter-spacing: .12em;
+          }
+          
+          .text-implica {
+            max-width: 630px;
+            text-align: center;
+            padding: 0;
+            margin-top: 20px;
+            letter-spacing: 0.1em;
+            line-height: 1.5em;
+            }
+        } /* End .cont-implica */
+
+        .cont-btn-oP {
+          height: 8vh;
+          margin-top: 25px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+  
+          .btn-whiteboard {
+            @include pongolin;
+            font-size: .9em;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            padding: 10px 15px;
+            border-radius: 25px;
+            border: solid 3px #ffffffe8;
+            @include shadow;
+            @include color-withe;
+            background-color: #ffffff00;
+            transition: all 0.4s ease;
+            &:hover {
+              background-color: #ffffff1c;
+              box-shadow: none;
+            }
+            &:active {
+              font-weight: 600;
+              color: #2b2b2b;
+              background-color: #777676d3;
+            }
+          }
+        } /* End .cont-btn-oP */
+      } /* End .implBtn-cont */
+    } /* End .main-container-oP */
+  } /* End section-oP */
+}
+
+/* ......... Media Query 1000px ......... */
+/* ................ oP ................. */
+@media screen and (min-width: 1000px) {
+  .section-oP {  
+    clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+
+    .main-container-oP { 
+      display: grid;
+      grid-template-columns: 0.7fr 1.3fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "title-op title-op"
+        "cont-tb-op implbtn-cont";
+      column-gap: 4vw;
+
+      .cont-tb-oP {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+          "text-op"
+          "cont-btn-op";
+        row-gap: 4vw;
+        padding-bottom: 0;
+
+        .text-oP {
+          margin-top: 5vh;
+          line-height: 6vh;
+          grid-area: text-op;
+        }
+
+        /* btn-onOff-1 on / btn-onOff-2 off */
+        .btn-onOff-1 {
+          display: block;
+        }
+        .cont-btn-oP {
+          height: auto;
+          margin-top: 0;
+          grid-area: cont-btn-op;
+          align-content: center;
+        }
+      } /* End .cont-tb-oP */
+
+      .implBtn-cont {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+        .cont-implica {
+          height: 100%;
+          padding: 0 20px;
+          margin-top: 5vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+
+          .blackboard {
+            position: absolute;
+            margin-top: 0;
+          }
+
+          .title-implica {
+            margin-top: 0;
+          }
+          .text-implica {
+            margin-top: 0;
+          }
+        }
+
+        /* btn-onOff-1 on / btn-onOff-2 off */
+        .btn-onOff-2 {
+          display: none;
+
+          .whiteboard {
+            display: none;
+          }
+        }
+      } /* End .implBtn-cont */
+    } /* End .main-container-oP */
+  } /*  End .section-oP */
+}
+
+
+/***************************** SECCION ULTIMAS NOTICIAS *****************************/
+/* ......... Mobile ......... */
+/* ........... uN ........... */
+.section-uN {
   width: 100%;
   height: 100%;
 
-  .main-container {
+  .main-container-uN {
     width: 100%;
     height: 100%;
-
-    
+    padding: 20px;
   }
 }
-@media screen and (min-width: 400px) {
-  
-}
+/* <picture>
+            <source 
+            srcset="/images/index_img/index3_uN-1200px.jpg" media="(min-width: 1200px)">
 
-/***************************** SECCION ULTIMAS NOTICIAS *****************************/
+            <source 
+            srcset="/images/index_img/index3_uN-800px.jpg" media="(min-width: 800px)">
 
-/* ........... Media Query 400px ........... */
+            <source 
+            srcset="/images/index_img/index3_uN-500px.jpg" media="(min-width: 500px)">
+
+            <img src="/images/index_img/index3_uN-500px.jpg" alt="Imagen de maestras con barbijo">
+          </picture> */
+
+/* ......... Media Query 400px ......... */
+/* ................ uN ................. */
 @media screen and (min-width: 400px) {
   
 }
 
 /********************* SECCION NIVELES/ESCUELA PARITARIA **********************/
 
-/* ........... Media Query 400px ........... */
+/* ......... Media Query 400px ......... */
+/* ................ uN ................. */
 @media screen and (min-width: 400px) {
   
 }
+
+
 /************************** SECCION NUESTROS EX ALUMNOS **************************/
 
-/* ........... Media Query 400px ........... */
+/* ......... Media Query 400px ......... */
+/* ................ eA ................. */
 @media screen and (min-width: 400px) {
   
 }
