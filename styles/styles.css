@@ -1,20 +1,20 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,400;1,600;1,800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,400;1,600;1,800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&family=Pangolin&family=Abril+Fatface&display=swap");
+/************************ Text *************************/
 /************************ Font Family *************************/
 /************************ Font Color *************************/
 /* MAIN COLORS */
 /* HOVER */
 /********************* Background Color **********************/
 /********************* Box-Shadow **********************/
-/********************* Line-Heig **********************/
-@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,400;1,600;1,800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,400;1,600;1,800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&family=Pangolin&family=Abril+Fatface&display=swap");
+/************************ Text *************************/
 /************************ Font Family *************************/
 /************************ Font Color *************************/
 /* MAIN COLORS */
 /* HOVER */
 /********************* Background Color **********************/
 /********************* Box-Shadow **********************/
-/********************* Line-Heig **********************/
 /* ........ Mobile ........ */
 header {
   position: absolute;
@@ -321,7 +321,7 @@ header .container-logo-nav nav .ul-menu-descktop {
     height: 100%;
     display: block;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 16px;
     color: #7f9883;
@@ -382,7 +382,7 @@ header .container-logo-nav nav .ul-menu-descktop {
   }
   header .container-logo-nav nav .ul-menu-descktop li:hover .ul-submenu .submenu a {
     width: 100%;
-    font-size: 0.95em;
+    font-size: 16px;
     font-weight: 600;
     color: #fff;
     padding: 10px 15px;
@@ -519,8 +519,7 @@ header .container-logo-nav nav .ul-menu-descktop {
 .red {
   color: #ffffff;
   background-color: #bb212c;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 
 .red:hover {
@@ -563,7 +562,29 @@ header .container-logo-nav nav .ul-menu-descktop {
   background-color: #07350f;
 }
 
-/* @import "./general/reset"; */
+/* Animations text*/
+.fadeLeft {
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out .2s;
+  transition: all 1s ease-in-out .2s;
+}
+
+.fadeTop {
+  opacity: 0;
+  -webkit-transform: translate(0, 10vh);
+          transform: translate(0, 10vh);
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.visible {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
 /***************************** VIDEO - HOME_index *****************************/
 /* ............ Mobile - video ........... */
 .section-video-home {
@@ -625,7 +646,7 @@ header .container-logo-nav nav .ul-menu-descktop {
   font-size: 3em;
   font-family: 'Frank Ruhl Libre', serif;
   color: #ffffff;
-  margin-right: 20px;
+  margin-right: 30px;
   text-align: right;
   left: 250px;
   z-index: 2;
@@ -826,7 +847,7 @@ header .container-logo-nav nav .ul-menu-descktop {
 .section-nH {
   width: 100%;
   height: 100%;
-  padding: 30px;
+  padding: 50px 30px 70px 30px;
   margin-top: 20px;
 }
 
@@ -837,7 +858,7 @@ header .container-logo-nav nav .ul-menu-descktop {
       grid-template-columns: 1fr;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-      grid-template-areas: "img-cont cont-ttb";
+      grid-template-areas: "img-cont"  "cont-ttb";
 }
 
 .section-nH .main-container-nH .img-cont {
@@ -854,8 +875,8 @@ header .container-logo-nav nav .ul-menu-descktop {
 }
 
 .section-nH .main-container-nH .cont-ttb {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: cont-ttb;
   display: -ms-grid;
   display: grid;
@@ -879,6 +900,7 @@ header .container-logo-nav nav .ul-menu-descktop {
   font-size: 1.8em;
   line-height: 1.5em;
   color: #0f5f1d;
+  text-shadow: 2px 2px 2px #00000050;
 }
 
 .section-nH .main-container-nH .cont-ttb .s-cont-tt .title-nH .span-title {
@@ -956,6 +978,7 @@ header .container-logo-nav nav .ul-menu-descktop {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     gap: 0 4vw;
+        grid-template-areas: "img-cont cont-ttb";
   }
   .section-nH .main-container-nH .img-cont {
     width: 100%;
@@ -1030,21 +1053,6 @@ header .container-logo-nav nav .ul-menu-descktop {
   }
 }
 
-/* Animation */
-.fadeLeft {
-  -webkit-transform: translateX(-10%);
-          transform: translateX(-10%);
-  opacity: 0;
-  -webkit-transition: all 1s ease-in-out .5s;
-  transition: all 1s ease-in-out .5s;
-}
-
-.visible {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
-}
-
 /***************************** SECCION OFERTA PEDAGOGICA *****************************/
 /* ......... Mobile ......... */
 /* ........... oP ........... */
@@ -1066,18 +1074,26 @@ header .container-logo-nav nav .ul-menu-descktop {
   -ms-grid-rows: auto auto auto;
       grid-template-rows: auto auto auto;
       grid-template-areas: "title-op" "cont-tb-op" "implbtn-cont";
-  padding: 90px 25px 70px 25px;
+  padding: 120px 25px 150px 25px;
 }
 
 .section-oP .main-container-oP .title-oP {
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  letter-spacing: .03px;
+  letter-spacing: 0.02em;
   line-height: 1.5em;
   text-shadow: 2px 2px 2px #000000;
+  color: #ffffff;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title-op;
+}
+
+.section-oP .main-container-oP .title-oP span {
+  font-size: 2em;
+}
+
+.section-oP .main-container-oP .title-oP span {
+  font-size: 2em;
 }
 
 .section-oP .main-container-oP .cont-tb-oP {
@@ -1089,8 +1105,8 @@ header .container-logo-nav nav .ul-menu-descktop {
 
 .section-oP .main-container-oP .cont-tb-oP .text-oP {
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
   line-height: 2em;
+  color: #ffffff;
   margin-top: 40px;
 }
 
@@ -1162,11 +1178,8 @@ header .container-logo-nav nav .ul-menu-descktop {
     /* End .main-container-oP */
   }
   .section-oP .main-container-oP {
-    padding: 10vh 5vw;
+    padding: 20vh 5vw 30vh;
     /* End .implBtn-cont */
-  }
-  .section-oP .main-container-oP .title-oP {
-    letter-spacing: .2em;
   }
   .section-oP .main-container-oP .implBtn-cont .cont-implica {
     width: 95%;
@@ -1211,12 +1224,7 @@ header .container-logo-nav nav .ul-menu-descktop {
     /* End .main-container-oP */
   }
   .section-oP .main-container-oP {
-    padding: 90px 5vw 130px 5vw;
     /* End .implBtn-cont */
-  }
-  .section-oP .main-container-oP .title-oP {
-    line-height: 1.5em;
-    letter-spacing: .2em;
   }
   .section-oP .main-container-oP .cont-tb-oP {
     padding-bottom: 6vh;
@@ -1257,7 +1265,7 @@ header .container-logo-nav nav .ul-menu-descktop {
     display: block;
     position: absolute;
     width: 100%;
-    max-width: 700px;
+    max-width: 80vw;
     margin-top: 70px;
     z-index: -1;
   }
@@ -1325,6 +1333,7 @@ header .container-logo-nav nav .ul-menu-descktop {
     /* End .main-container-oP */
   }
   .section-oP .main-container-oP {
+    padding: 20vh 5vw 40vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 0.7fr 1.3fr;
@@ -1338,6 +1347,7 @@ header .container-logo-nav nav .ul-menu-descktop {
     /* End .implBtn-cont */
   }
   .section-oP .main-container-oP .cont-tb-oP {
+    margin-top: 5vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -1360,8 +1370,9 @@ header .container-logo-nav nav .ul-menu-descktop {
     display: block;
   }
   .section-oP .main-container-oP .cont-tb-oP .cont-btn-oP {
+    width: 100%;
     height: auto;
-    margin-top: 0;
+    margin-top: 3vh;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: cont-btn-op;
@@ -1380,7 +1391,6 @@ header .container-logo-nav nav .ul-menu-descktop {
     /* btn-onOff-1 on / btn-onOff-2 off */
   }
   .section-oP .main-container-oP .implBtn-cont .cont-implica {
-    height: 100%;
     padding: 0 20px;
     margin-top: 5vw;
     display: -webkit-box;
@@ -1413,34 +1423,262 @@ header .container-logo-nav nav .ul-menu-descktop {
   /*  End .section-oP */
 }
 
+/* ......... Media Query 1400px ......... */
+/* ................ oP ................. */
+@media screen and (min-width: 1400px) {
+  .section-oP .main-container-oP .implBtn-cont {
+    height: 100%;
+  }
+}
+
 /***************************** SECCION ULTIMAS NOTICIAS *****************************/
 /* ......... Mobile ......... */
 /* ........... uN ........... */
 .section-uN {
+  position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+.section-uN .bg-circle-grey {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  top: 5%;
+  left: -30%;
+  background-color: #7f9883;
+  z-index: -1;
+  -webkit-box-shadow: 4px 4px 7px #00000086;
+          box-shadow: 4px 4px 7px #00000086;
+}
+
+.section-uN .bg-circle-red {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  top: 300px;
+  left: 60px;
+  background-color: #bb212bcc;
+  z-index: -2;
+}
+
+.section-uN .text-22 {
+  position: absolute;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 0;
+  color: #bb212bcc;
+  top: 100px;
+  right: -50px;
+  opacity: .2;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .section-uN .main-container-uN {
+  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 20px;
+  padding: 100px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-/* <picture>
-            <source 
-            srcset="/images/index_img/index3_uN-1200px.jpg" media="(min-width: 1200px)">
+.section-uN .main-container-uN .title-uN {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.5em;
+  text-shadow: 2px 2px 2px #000000;
+  color: #ffffff;
+}
 
-            <source 
-            srcset="/images/index_img/index3_uN-800px.jpg" media="(min-width: 800px)">
+.section-uN .main-container-uN .title-uN span {
+  font-size: 2em;
+}
 
-            <source 
-            srcset="/images/index_img/index3_uN-500px.jpg" media="(min-width: 500px)">
+.section-uN .main-container-uN .title-uN span {
+  font-size: 2.3em;
+}
 
-            <img src="/images/index_img/index3_uN-500px.jpg" alt="Imagen de maestras con barbijo">
-          </picture> */
+.section-uN .main-container-uN .text-uN {
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2em;
+  margin-top: 40px;
+}
+
+.section-uN .main-container-uN .img-cont-uN {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.section-uN .main-container-uN .img-cont-uN picture img {
+  width: 100%;
+  -webkit-box-shadow: 4px 4px 7px #00000086;
+          box-shadow: 4px 4px 7px #00000086;
+}
+
+.section-uN .main-container-uN .cont-btn-uN {
+  width: 100%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* ......... Media Query 400px ......... */
 /* ................ uN ................. */
+@media screen and (min-width: 400px) {
+  .section-uN {
+    overflow: hidden;
+  }
+  .section-uN .cont-circle-grey {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    margin-top: 20vw;
+  }
+  .section-uN .cont-circle-grey .bg-circle-grey {
+    width: 20%;
+    padding: 100%;
+    top: 0;
+    left: -50%;
+  }
+  .section-uN .cont-circle-red {
+    position: relative;
+    width: 45%;
+    height: 100%;
+  }
+  .section-uN .cont-circle-red .bg-circle-red {
+    width: 30%;
+    padding: 100%;
+    top: 230px;
+    left: 120px;
+  }
+  .section-uN .text-22 {
+    top: 18vh;
+  }
+  .section-uN .main-container-uN {
+    padding: 10vw 5vw;
+  }
+  .section-uN .main-container-uN .title-uN {
+    grid-area: title-uN;
+  }
+  .section-uN .main-container-uN .text-uN {
+    width: 80%;
+    margin-top: 8vw;
+    grid-area: text-uN;
+  }
+  .section-uN .main-container-uN .img-cont-uN {
+    margin-top: 10vw;
+  }
+  .section-uN .main-container-uN .cont-btn-uN {
+    margin-top: 90px;
+  }
+}
+
+/* ......... Media Query 700px ......... */
+/* ................ uN ................. */
+@media screen and (min-width: 700px) {
+  .section-uN .text-22 {
+    font-size: 7em;
+    top: 22vh;
+  }
+}
+
+/* ......... Media Query 1000px ......... */
+/* ................ uN ................. */
+@media screen and (min-width: 1000px) {
+  .section-uN .cont-circle-grey {
+    width: 30%;
+    margin-top: 5vw;
+  }
+  .section-uN .cont-circle-red {
+    position: relative;
+    width: 45%;
+    height: 100%;
+  }
+  .section-uN .cont-circle-red .bg-circle-red {
+    width: 30%;
+    padding: 100%;
+    top: 230px;
+    left: 120px;
+  }
+  .section-uN .text-22 {
+    font-size: 20em;
+    top: 25vh;
+    -webkit-transform: none;
+            transform: none;
+    right: 10px;
+    opacity: .1;
+    z-index: -3;
+  }
+  .section-uN .main-container-uN {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: .8fr 1.2fr;
+        grid-template-columns: .8fr 1.2fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "title-uN ." "text-uN img-cont-uN" "cont-btn-uN cont-btn-uN";
+    padding: 7vw 5vw;
+  }
+  .section-uN .main-container-uN .text-uN {
+    margin-top: 3vw;
+  }
+  .section-uN .main-container-uN .img-cont-uN {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: img-cont-uN;
+    margin-top: 3vw;
+  }
+  .section-uN .main-container-uN .cont-btn-uN {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cont-btn-uN;
+    margin-top: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+/* ......... Media Query 1300px ........ */
+/* ................ uN ................. */
+@media screen and (min-width: 1300px) {
+  .section-uN .main-container-uN {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: .8fr 1.2fr;
+        grid-template-columns: .8fr 1.2fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "title-uN ." "text-uN img-cont-uN" "cont-btn-uN img-cont-uN";
+    padding: 7vw 5vw;
+  }
+  .section-uN .main-container-uN .cont-btn-uN .anim-height {
+    position: absolute;
+    height: 150%;
+  }
+  .section-uN .main-container-uN .cont-btn-uN .anim-height:hover {
+    height: auto;
+  }
+}
+
 /********************* SECCION NIVELES/ESCUELA PARITARIA **********************/
 /* ......... Media Query 400px ......... */
 /* ................ uN ................. */
@@ -1481,10 +1719,6 @@ html body h2 {
   font-size: 1.5em;
 }
 
-html body h2 .span-title {
-  font-size: 2em;
-}
-
 html body a {
   font-size: 1.1em;
 }
@@ -1496,6 +1730,9 @@ html body li {
 /* ....... Media Query 800px ....... */
 @media screen and (min-width: 800px) {
   html body {
+    font-size: 110%;
+  }
+  html body a {
     font-size: 100%;
   }
 }
@@ -1503,7 +1740,20 @@ html body li {
 /* ....... Media Query 1200px ....... */
 @media screen and (min-width: 1200px) {
   html body {
+    font-size: 110%;
+  }
+  html body a {
+    font-size: 100%;
+  }
+}
+
+/* ....... Media Query 1400px ....... */
+@media screen and (min-width: 1200px) {
+  html body {
     font-size: 120%;
+  }
+  html body a {
+    font-size: 110%;
   }
 }
 

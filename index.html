@@ -18,7 +18,6 @@
     <link rel="icon" href="images/menu_img/isotipo-ici.svg" type="image/svg">
     <link rel="stylesheet" href="./styles/styles.css" media="screen">    
   </head>
-</script>
   <body>
 
     <header>
@@ -181,7 +180,8 @@
       <div class="main-container-nH">
 
         <div class="img-cont">
-          <img class="img-nH img-grid" src="/images/index_img/index1_nuestraHistoria.JPG" alt="Imagen d estatua">
+
+          <img class="img-nH img-grid" src="/images/index_img/index1_nuestraHistoria.jpg" alt="Imagen de estatua">
         </div>
         
         <div class="cont-ttb scroll-content fadeLeft" id="cont-ttb">
@@ -211,7 +211,7 @@
     
     <section class="section-oP">
 
-      <div class="main-container-oP">
+      <div class="main-container-oP scroll-content fadeTop">
 
         <h2 class="title-oP">
           Oferta <br> 
@@ -269,35 +269,33 @@
     
     <!-- ***************************** SECCION ULTIMAS NOTICIAS ***************************** -->
     <section class="section-uN">
+
+      <div class="cont-circle-grey">
+        <div class="bg-circle-grey"></div>
+      </div>
+      
+      <div class="cont-circle-red">
+        <div class="bg-circle-red"></div>
+      </div>
+
+      <p class="text-22">
+        2022
+      </p>
       
       <div class="main-container-uN">
 
-        <div class="tb-cont-uN">
+        <h2 class="title-uN scroll-content fadeLeft">
+          Últimas <br>
+          <span>Noticias</span> 
+        </h2>
 
-          <div class="bg-red"></div>
+        <p class="text-uN scroll-content fadeLeft">
+          Iniciamos el Ciclo Lectivo '22.<br>
+          Con todas las medidas de seguridad y prevención, cumpliendo los protocolos provinciales.
+          Les garantizamos la continuidad pedagógica presencial diaria de cada alumno/a.
+        </p>
 
-          <p class="text-22">
-            '22
-          </p>
-
-          <h2 class="Title-uN">
-            Últimas Noticias
-          </h2>
-
-          <p class="text-uN">
-            Comenzamos el CICLO LECTIVO 2022.<br>
-            Con todas las medidas de seguridad y prevención, cumpliendo los protocolos provinciales.<br>
-            Les garantizamos la continuidad pedagógica presencial diaria de cada alumno/a.
-          </p>
-
-          <div class="cont-btn-uN">
-            <a class="btn green" href="/novedades.html">
-              Ver novedades
-            </a>
-          </div>
-
-        </div>
-        <div class="img-cont-uN">
+        <div class="img-cont-uN scroll-content fadeTop">
           <picture>
             <source 
             srcset="/images/index_img/index3_uN-1200px.jpg" media="(min-width: 1200px)">
@@ -310,6 +308,11 @@
 
             <img src="/images/index_img/index3_uN-500px.jpg" alt="Imagen de maestras con barbijo">
           </picture>
+        </div>
+        <div class="cont-btn-uN">
+          <a class="btn red anim-height" href="/novedades.html">
+            Ver Novedades
+          </a>
         </div>
       </div>      
     </section>
@@ -516,9 +519,7 @@
       </div>
     </footer> -->
 
-    <!-- <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script> -->
-    <script class="u-script" type="text/javascript" src="menu.js" defer=""></script>
+    <script class="script" type="text/javascript" src="javascript/scripts.js" defer=""></script>
 
   </body>
 </html>

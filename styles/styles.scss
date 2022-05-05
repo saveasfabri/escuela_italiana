@@ -2,7 +2,7 @@
 @import "./general/variables";
 @import "./general/menu";
 @import "./general/btns";
-/* @import "./general/reset"; */
+@import "./general/animations";
 
 @import "./pages/index";
 /* @import "./pages/comedor";
@@ -33,9 +33,6 @@ html {
     }
     h2 {
       font-size: 1.5em;
-      .span-title {
-        font-size: 2em;
-      }
     }
     a {
       font-size: 1.1em
@@ -50,22 +47,42 @@ html {
 @media screen and (min-width: 800px) {
   html {  
     body {
-      font-size: 100%;
+      font-size: 110%;
+      
+      a {
+        font-size: 100%;
+      }
     }
   }
 }
 
 /* ....... Media Query 1200px ....... */
+@media screen and (min-width: 1200px) {
+  html { 
+    body {
+      font-size: 110%;
+    
+      a {
+        font-size: 100%;
+      }
+    }
+  }
 
+}
+/* ....... Media Query 1400px ....... */
 @media screen and (min-width: 1200px) {
   html { 
     body {
       font-size: 120%;
+
+      a {
+        font-size: 110%;
+      }
     }
   }
 }
 
 p, li, h1 {
-    @include line-heig;
+    line-height: 1.6em;
 }
 

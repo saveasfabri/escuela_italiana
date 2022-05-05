@@ -1,17 +1,21 @@
 
+/* Scroll animation - Header-Menu */
+
 let ubicacionPrincipal  = window.pageYOffset;
 
 window.onscroll = () => {
   let Desplazamiento_Actual = window.pageYOffset;
 
   if (ubicacionPrincipal >= Desplazamiento_Actual) {
-    document.querySelector('header').className = "u-clearfix u-header u-header header-enabled";
+    document.querySelector('header').className = "header-enabled";
   }
   else {
-    document.querySelector('header').className = "u-clearfix u-header u-header header-off";
+    document.querySelector('header').className = "header-off";
   }
   ubicacionPrincipal = Desplazamiento_Actual;
 }
+
+
 
 /* Text Animation */
 

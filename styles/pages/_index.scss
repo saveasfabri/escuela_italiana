@@ -43,7 +43,7 @@
         font-size: 3em;
         @include frank;
         color: #ffffff;
-        margin-right: 20px;
+        margin-right: 30px;
         text-align: right;
         left: 250px;
         z-index: 2;
@@ -167,7 +167,7 @@
 .section-nH {
   width: 100%;
   height: 100%;
-  padding: 30px;
+  padding: 50px 30px 70px 30px;
   margin-top: 20px;
 
   .main-container-nH {
@@ -175,7 +175,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
-      "img-cont cont-ttb";
+      "img-cont" 
+      "cont-ttb";
 
     .img-cont {
       grid-area: img-cont;
@@ -206,6 +207,7 @@
           font-size: 1.8em;
           line-height: 1.5em;
           @include color-green-soft;
+          text-shadow: 2px 2px 2px #00000050;
           .span-title {
             font-size: 2.3em;
           }
@@ -295,6 +297,8 @@
       grid-template-columns: 1fr 2fr;
       grid-template-rows: auto;
       gap: 0 4vw;
+      grid-template-areas: 
+      "img-cont cont-ttb";
 
       .img-cont { 
         width: 100%;
@@ -386,17 +390,6 @@
   }
 }
 
-/* Animation */
-.fadeLeft {
-  transform: translateX(-10%);
-  opacity: 0;
-  transition: all 1s ease-in-out .5s;
-}
-.visible {
-  transform: translateX(0);
-  opacity: 1;
-}
-
 
 /***************************** SECCION OFERTA PEDAGOGICA *****************************/
 
@@ -409,7 +402,7 @@
   @include background-gradient-green;
   clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%);
 
-  .main-container-oP {    
+  .main-container-oP {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -417,24 +410,23 @@
       "title-op"
       "cont-tb-op"
       "implbtn-cont";
-    padding: 90px 25px 70px 25px;
+    padding: 120px 25px 150px 25px;
 
     .title-oP {
-      @include montserrat;
+      @include title-section;
       @include color-withe;
-      letter-spacing: .03px;
-      line-height: 1.5em;
-      text-shadow: 2px 2px 2px #000000;
       grid-area: title-op;
+      span {
+        font-size: 2em;
+      }
     }
 
     .cont-tb-oP {
       grid-area: cont-tb-op;
 
       .text-oP {
-        @include montserrat;
+        @include text-gral;
         @include color-withe;
-        line-height: 2em;
         margin-top: 40px;
       }
 
@@ -499,11 +491,7 @@
   .section-oP {   
     
     .main-container-oP {
-      padding: 10vh 5vw;
-
-      .title-oP {
-        letter-spacing: .2em;
-      }
+      padding: 20vh 5vw 30vh;
 
       .implBtn-cont {
 
@@ -546,12 +534,6 @@
   .section-oP {
 
     .main-container-oP {
-      padding: 90px 5vw 130px 5vw;
-
-      .title-oP {
-        line-height: 1.5em;
-        letter-spacing: .2em;
-      }
 
       .cont-tb-oP {
         padding-bottom: 6vh;
@@ -581,7 +563,7 @@
             display: block;
             position: absolute;
             width: 100%;
-            max-width: 700px;
+            max-width: 80vw;
             margin-top: 70px;
             z-index: -1;
           }
@@ -640,10 +622,11 @@
 /* ......... Media Query 1000px ......... */
 /* ................ oP ................. */
 @media screen and (min-width: 1000px) {
-  .section-oP {  
+  .section-oP {
     clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
 
     .main-container-oP { 
+      padding: 20vh 5vw 40vh;
       display: grid;
       grid-template-columns: 0.7fr 1.3fr;
       grid-template-rows: auto;
@@ -653,6 +636,7 @@
       column-gap: 4vw;
 
       .cont-tb-oP {
+        margin-top: 5vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
@@ -673,8 +657,9 @@
           display: block;
         }
         .cont-btn-oP {
+          width: 100%;
           height: auto;
-          margin-top: 0;
+          margin-top: 3vh;
           grid-area: cont-btn-op;
           align-content: center;
         }
@@ -686,7 +671,6 @@
         flex-direction: column;
 
         .cont-implica {
-          height: 100%;
           padding: 0 20px;
           margin-top: 5vw;
           display: flex;
@@ -719,37 +703,266 @@
   } /*  End .section-oP */
 }
 
+/* ......... Media Query 1400px ......... */
+/* ................ oP ................. */
+@media screen and (min-width: 1400px) {
+  .section-oP {
+    .main-container-oP {
+      
+      .implBtn-cont {
+        height: 100%;
+      }
+    }
+  }
+}
 
 /***************************** SECCION ULTIMAS NOTICIAS *****************************/
 /* ......... Mobile ......... */
 /* ........... uN ........... */
 .section-uN {
+  position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+
+  .bg-circle-grey {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    top: 5%;
+    left: -30%;
+    @include background-green-soft;
+    z-index: -1;
+    @include shadow;
+  }
+  .bg-circle-red {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    top: 300px;
+    left: 60px;
+    @include background-red;
+    z-index: -2;
+
+  }
+  .text-22 {
+    position: absolute;
+    @include abril;
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 0;
+    @include color-red;
+    top: 100px;
+    right: -50px;
+    opacity: .2;
+    transform: rotate(-90deg);
+  }
 
   .main-container-uN {
+    position: relative;
     width: 100%;
-    height: 100%;
-    padding: 20px;
+    padding: 100px 30px;
+    display: flex;
+    flex-direction: column;
+
+    .title-uN {
+      width: 100%;
+      @include title-section;
+      @include color-withe;
+      span {
+        font-size: 2.3em
+      }
+    }
+
+    .text-uN {
+      width: 100%;
+      @include color-withe;
+      @include text-gral;
+      margin-top: 40px;
+    }
+
+    .img-cont-uN {
+      width: 100%;
+      margin-top: 40px;
+      
+      picture {
+
+        img {
+          width: 100%;
+          @include shadow;
+        }
+      }
+    }
+    .cont-btn-uN {
+      width: 100%;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
-/* <picture>
-            <source 
-            srcset="/images/index_img/index3_uN-1200px.jpg" media="(min-width: 1200px)">
-
-            <source 
-            srcset="/images/index_img/index3_uN-800px.jpg" media="(min-width: 800px)">
-
-            <source 
-            srcset="/images/index_img/index3_uN-500px.jpg" media="(min-width: 500px)">
-
-            <img src="/images/index_img/index3_uN-500px.jpg" alt="Imagen de maestras con barbijo">
-          </picture> */
 
 /* ......... Media Query 400px ......... */
 /* ................ uN ................. */
 @media screen and (min-width: 400px) {
-  
+  .section-uN {
+    overflow: hidden;
+    
+    .cont-circle-grey {      
+      position: relative;
+      width: 60%;
+      height: 100%;
+      margin-top: 20vw;
+
+      .bg-circle-grey {
+        width: 20%;
+        padding: 100%;
+        top: 0;
+        left: -50%;
+
+      }
+    }
+    
+    .cont-circle-red {
+      position: relative;
+      width: 45%;
+      height: 100%;
+
+      .bg-circle-red {
+        width: 30%;
+        padding: 100%;
+        top: 230px;
+        left: 120px;
+      }
+    }
+    
+
+    .text-22 {
+      top: 18vh;
+    }
+    .main-container-uN {
+      padding: 10vw 5vw;
+
+      .title-uN {
+        grid-area: title-uN;
+      }
+
+      .text-uN {
+        width: 80%;
+        margin-top: 8vw;
+        grid-area: text-uN;
+      }
+      .img-cont-uN {
+        margin-top: 10vw;
+      }
+      .cont-btn-uN {
+        margin-top: 90px;
+      }
+    }
+  }
+}
+
+/* ......... Media Query 700px ......... */
+/* ................ uN ................. */
+@media screen and (min-width: 700px) {
+  .section-uN {
+
+    .text-22 {
+      font-size: 7em;
+      top: 22vh;
+    }
+  }
+}
+
+/* ......... Media Query 1000px ......... */
+/* ................ uN ................. */
+@media screen and (min-width: 1000px) {
+  .section-uN {    
+
+    .cont-circle-grey {
+      width: 30%;
+      margin-top: 5vw;
+    }
+    
+    .cont-circle-red {
+      position: relative;
+      width: 45%;
+      height: 100%;
+
+      .bg-circle-red {
+        width: 30%;
+        padding: 100%;
+        top: 230px;
+        left: 120px;
+      }
+    }
+    
+
+    .text-22 {
+      font-size: 20em;
+      top: 25vh;
+      transform: none;
+      right: 10px;
+      opacity: .1;
+      z-index: -3;
+    }
+    .main-container-uN {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "title-uN ."
+        "text-uN img-cont-uN"
+        "cont-btn-uN cont-btn-uN";
+      padding: 7vw 5vw;
+      
+      .text-uN {
+        margin-top: 3vw;
+      }
+
+      .img-cont-uN {
+        grid-area: img-cont-uN;
+        margin-top: 3vw;
+      }
+
+      .cont-btn-uN {
+        grid-area: cont-btn-uN;
+        margin-top: 0;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+/* ......... Media Query 1300px ........ */
+/* ................ uN ................. */
+@media screen and (min-width: 1300px) {
+  .section-uN {
+
+    .main-container-uN {
+      display: grid;
+        grid-template-columns: .8fr 1.2fr;
+        grid-template-rows: auto auto auto ;
+        grid-template-areas:
+          "title-uN ."
+          "text-uN img-cont-uN"
+          "cont-btn-uN img-cont-uN";
+        padding: 7vw 5vw;
+
+        .cont-btn-uN {
+
+          .anim-height {
+            position: absolute;
+            height: 150%;
+            &:hover {
+              height: auto;
+            }
+          }
+        }
+    }
+  }
 }
 
 /********************* SECCION NIVELES/ESCUELA PARITARIA **********************/
@@ -757,7 +970,7 @@
 /* ......... Media Query 400px ......... */
 /* ................ uN ................. */
 @media screen and (min-width: 400px) {
-  
+
 }
 
 
